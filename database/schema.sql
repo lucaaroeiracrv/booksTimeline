@@ -1,0 +1,16 @@
+CREATE TABLE IF NOT EXISTS books (
+  id TEXT PRIMARY KEY,
+  title TEXT NOT NULL,
+  author TEXT NOT NULL,
+  year INTEGER NOT NULL,
+  difficulty TEXT NOT NULL CHECK (difficulty IN ('easy', 'medium', 'hard')),
+  cover TEXT NOT NULL
+);
+
+CREATE TABLE IF NOT EXISTS scores (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  player_name TEXT NOT NULL,
+  score INTEGER NOT NULL,
+  max_streak INTEGER NOT NULL DEFAULT 0,
+  created_at TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP
+);

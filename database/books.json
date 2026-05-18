@@ -1,0 +1,2402 @@
+[
+  {
+    "id": "easy-1",
+    "title": "Dom Casmurro",
+    "author": "Machado de Assis",
+    "year": 1899,
+    "difficulty": "easy",
+    "cover": "https://covers.openlibrary.org/b/id/8231856-L.jpg"
+  },
+  {
+    "id": "easy-2",
+    "title": "1984",
+    "author": "George Orwell",
+    "year": 1949,
+    "difficulty": "easy",
+    "cover": "https://covers.openlibrary.org/b/id/153541-L.jpg"
+  },
+  {
+    "id": "easy-3",
+    "title": "O Pequeno Principe",
+    "author": "Antoine de Saint-Exupery",
+    "year": 1943,
+    "difficulty": "easy",
+    "cover": "https://covers.openlibrary.org/b/id/146125-L.jpg"
+  },
+  {
+    "id": "easy-4",
+    "title": "Orgulho e Preconceito",
+    "author": "Jane Austen",
+    "year": 1813,
+    "difficulty": "easy",
+    "cover": "https://covers.openlibrary.org/b/id/8091016-L.jpg"
+  },
+  {
+    "id": "easy-5",
+    "title": "Harry Potter e a Pedra Filosofal",
+    "author": "J. K. Rowling",
+    "year": 1997,
+    "difficulty": "easy",
+    "cover": "https://covers.openlibrary.org/b/id/7984916-L.jpg"
+  },
+  {
+    "id": "easy-6",
+    "title": "O Senhor dos Aneis",
+    "author": "J. R. R. Tolkien",
+    "year": 1954,
+    "difficulty": "easy",
+    "cover": "https://covers.openlibrary.org/b/id/8231996-L.jpg"
+  },
+  {
+    "id": "easy-7",
+    "title": "O Hobbit",
+    "author": "J. R. R. Tolkien",
+    "year": 1937,
+    "difficulty": "easy",
+    "cover": "https://covers.openlibrary.org/b/id/6979861-L.jpg"
+  },
+  {
+    "id": "easy-8",
+    "title": "Capitaes da Areia",
+    "author": "Jorge Amado",
+    "year": 1937,
+    "difficulty": "easy",
+    "cover": "https://covers.openlibrary.org/b/id/10033449-L.jpg"
+  },
+  {
+    "id": "easy-9",
+    "title": "A Revolucao dos Bichos",
+    "author": "George Orwell",
+    "year": 1945,
+    "difficulty": "easy",
+    "cover": "https://covers.openlibrary.org/b/id/8226191-L.jpg"
+  },
+  {
+    "id": "easy-10",
+    "title": "Memorias Postumas de Bras Cubas",
+    "author": "Machado de Assis",
+    "year": 1881,
+    "difficulty": "easy",
+    "cover": "https://covers.openlibrary.org/b/id/10420388-L.jpg"
+  },
+  {
+    "id": "easy-11",
+    "title": "Book Easy 11",
+    "author": "Author 11",
+    "year": 1953,
+    "difficulty": "easy",
+    "cover": "https://covers.openlibrary.org/b/id/8231856-L.jpg"
+  },
+  {
+    "id": "easy-12",
+    "title": "Book Easy 12",
+    "author": "Author 12",
+    "year": 1966,
+    "difficulty": "easy",
+    "cover": "https://covers.openlibrary.org/b/id/8231856-L.jpg"
+  },
+  {
+    "id": "easy-13",
+    "title": "Book Easy 13",
+    "author": "Author 13",
+    "year": 1979,
+    "difficulty": "easy",
+    "cover": "https://covers.openlibrary.org/b/id/8231856-L.jpg"
+  },
+  {
+    "id": "easy-14",
+    "title": "Book Easy 14",
+    "author": "Author 14",
+    "year": 1992,
+    "difficulty": "easy",
+    "cover": "https://covers.openlibrary.org/b/id/8231856-L.jpg"
+  },
+  {
+    "id": "easy-15",
+    "title": "Book Easy 15",
+    "author": "Author 15",
+    "year": 2005,
+    "difficulty": "easy",
+    "cover": "https://covers.openlibrary.org/b/id/8231856-L.jpg"
+  },
+  {
+    "id": "easy-16",
+    "title": "Book Easy 16",
+    "author": "Author 16",
+    "year": 2018,
+    "difficulty": "easy",
+    "cover": "https://covers.openlibrary.org/b/id/8231856-L.jpg"
+  },
+  {
+    "id": "easy-17",
+    "title": "Book Easy 17",
+    "author": "Author 17",
+    "year": 1820,
+    "difficulty": "easy",
+    "cover": "https://covers.openlibrary.org/b/id/8231856-L.jpg"
+  },
+  {
+    "id": "easy-18",
+    "title": "Book Easy 18",
+    "author": "Author 18",
+    "year": 1833,
+    "difficulty": "easy",
+    "cover": "https://covers.openlibrary.org/b/id/8231856-L.jpg"
+  },
+  {
+    "id": "easy-19",
+    "title": "Book Easy 19",
+    "author": "Author 19",
+    "year": 1846,
+    "difficulty": "easy",
+    "cover": "https://covers.openlibrary.org/b/id/8231856-L.jpg"
+  },
+  {
+    "id": "easy-20",
+    "title": "Book Easy 20",
+    "author": "Author 20",
+    "year": 1859,
+    "difficulty": "easy",
+    "cover": "https://covers.openlibrary.org/b/id/8231856-L.jpg"
+  },
+  {
+    "id": "easy-21",
+    "title": "Book Easy 21",
+    "author": "Author 21",
+    "year": 1872,
+    "difficulty": "easy",
+    "cover": "https://covers.openlibrary.org/b/id/8231856-L.jpg"
+  },
+  {
+    "id": "easy-22",
+    "title": "Book Easy 22",
+    "author": "Author 22",
+    "year": 1885,
+    "difficulty": "easy",
+    "cover": "https://covers.openlibrary.org/b/id/8231856-L.jpg"
+  },
+  {
+    "id": "easy-23",
+    "title": "Book Easy 23",
+    "author": "Author 23",
+    "year": 1898,
+    "difficulty": "easy",
+    "cover": "https://covers.openlibrary.org/b/id/8231856-L.jpg"
+  },
+  {
+    "id": "easy-24",
+    "title": "Book Easy 24",
+    "author": "Author 24",
+    "year": 1911,
+    "difficulty": "easy",
+    "cover": "https://covers.openlibrary.org/b/id/8231856-L.jpg"
+  },
+  {
+    "id": "easy-25",
+    "title": "Book Easy 25",
+    "author": "Author 25",
+    "year": 1924,
+    "difficulty": "easy",
+    "cover": "https://covers.openlibrary.org/b/id/8231856-L.jpg"
+  },
+  {
+    "id": "easy-26",
+    "title": "Book Easy 26",
+    "author": "Author 26",
+    "year": 1937,
+    "difficulty": "easy",
+    "cover": "https://covers.openlibrary.org/b/id/8231856-L.jpg"
+  },
+  {
+    "id": "easy-27",
+    "title": "Book Easy 27",
+    "author": "Author 27",
+    "year": 1950,
+    "difficulty": "easy",
+    "cover": "https://covers.openlibrary.org/b/id/8231856-L.jpg"
+  },
+  {
+    "id": "easy-28",
+    "title": "Book Easy 28",
+    "author": "Author 28",
+    "year": 1963,
+    "difficulty": "easy",
+    "cover": "https://covers.openlibrary.org/b/id/8231856-L.jpg"
+  },
+  {
+    "id": "easy-29",
+    "title": "Book Easy 29",
+    "author": "Author 29",
+    "year": 1976,
+    "difficulty": "easy",
+    "cover": "https://covers.openlibrary.org/b/id/8231856-L.jpg"
+  },
+  {
+    "id": "easy-30",
+    "title": "Book Easy 30",
+    "author": "Author 30",
+    "year": 1989,
+    "difficulty": "easy",
+    "cover": "https://covers.openlibrary.org/b/id/8231856-L.jpg"
+  },
+  {
+    "id": "easy-31",
+    "title": "Book Easy 31",
+    "author": "Author 31",
+    "year": 2002,
+    "difficulty": "easy",
+    "cover": "https://covers.openlibrary.org/b/id/8231856-L.jpg"
+  },
+  {
+    "id": "easy-32",
+    "title": "Book Easy 32",
+    "author": "Author 32",
+    "year": 2015,
+    "difficulty": "easy",
+    "cover": "https://covers.openlibrary.org/b/id/8231856-L.jpg"
+  },
+  {
+    "id": "easy-33",
+    "title": "Book Easy 33",
+    "author": "Author 33",
+    "year": 1817,
+    "difficulty": "easy",
+    "cover": "https://covers.openlibrary.org/b/id/8231856-L.jpg"
+  },
+  {
+    "id": "easy-34",
+    "title": "Book Easy 34",
+    "author": "Author 34",
+    "year": 1830,
+    "difficulty": "easy",
+    "cover": "https://covers.openlibrary.org/b/id/8231856-L.jpg"
+  },
+  {
+    "id": "easy-35",
+    "title": "Book Easy 35",
+    "author": "Author 35",
+    "year": 1843,
+    "difficulty": "easy",
+    "cover": "https://covers.openlibrary.org/b/id/8231856-L.jpg"
+  },
+  {
+    "id": "easy-36",
+    "title": "Book Easy 36",
+    "author": "Author 36",
+    "year": 1856,
+    "difficulty": "easy",
+    "cover": "https://covers.openlibrary.org/b/id/8231856-L.jpg"
+  },
+  {
+    "id": "easy-37",
+    "title": "Book Easy 37",
+    "author": "Author 37",
+    "year": 1869,
+    "difficulty": "easy",
+    "cover": "https://covers.openlibrary.org/b/id/8231856-L.jpg"
+  },
+  {
+    "id": "easy-38",
+    "title": "Book Easy 38",
+    "author": "Author 38",
+    "year": 1882,
+    "difficulty": "easy",
+    "cover": "https://covers.openlibrary.org/b/id/8231856-L.jpg"
+  },
+  {
+    "id": "easy-39",
+    "title": "Book Easy 39",
+    "author": "Author 39",
+    "year": 1895,
+    "difficulty": "easy",
+    "cover": "https://covers.openlibrary.org/b/id/8231856-L.jpg"
+  },
+  {
+    "id": "easy-40",
+    "title": "Book Easy 40",
+    "author": "Author 40",
+    "year": 1908,
+    "difficulty": "easy",
+    "cover": "https://covers.openlibrary.org/b/id/8231856-L.jpg"
+  },
+  {
+    "id": "easy-41",
+    "title": "Book Easy 41",
+    "author": "Author 41",
+    "year": 1921,
+    "difficulty": "easy",
+    "cover": "https://covers.openlibrary.org/b/id/8231856-L.jpg"
+  },
+  {
+    "id": "easy-42",
+    "title": "Book Easy 42",
+    "author": "Author 42",
+    "year": 1934,
+    "difficulty": "easy",
+    "cover": "https://covers.openlibrary.org/b/id/8231856-L.jpg"
+  },
+  {
+    "id": "easy-43",
+    "title": "Book Easy 43",
+    "author": "Author 43",
+    "year": 1947,
+    "difficulty": "easy",
+    "cover": "https://covers.openlibrary.org/b/id/8231856-L.jpg"
+  },
+  {
+    "id": "easy-44",
+    "title": "Book Easy 44",
+    "author": "Author 44",
+    "year": 1960,
+    "difficulty": "easy",
+    "cover": "https://covers.openlibrary.org/b/id/8231856-L.jpg"
+  },
+  {
+    "id": "easy-45",
+    "title": "Book Easy 45",
+    "author": "Author 45",
+    "year": 1973,
+    "difficulty": "easy",
+    "cover": "https://covers.openlibrary.org/b/id/8231856-L.jpg"
+  },
+  {
+    "id": "easy-46",
+    "title": "Book Easy 46",
+    "author": "Author 46",
+    "year": 1986,
+    "difficulty": "easy",
+    "cover": "https://covers.openlibrary.org/b/id/8231856-L.jpg"
+  },
+  {
+    "id": "easy-47",
+    "title": "Book Easy 47",
+    "author": "Author 47",
+    "year": 1999,
+    "difficulty": "easy",
+    "cover": "https://covers.openlibrary.org/b/id/8231856-L.jpg"
+  },
+  {
+    "id": "easy-48",
+    "title": "Book Easy 48",
+    "author": "Author 48",
+    "year": 2012,
+    "difficulty": "easy",
+    "cover": "https://covers.openlibrary.org/b/id/8231856-L.jpg"
+  },
+  {
+    "id": "easy-49",
+    "title": "Book Easy 49",
+    "author": "Author 49",
+    "year": 1814,
+    "difficulty": "easy",
+    "cover": "https://covers.openlibrary.org/b/id/8231856-L.jpg"
+  },
+  {
+    "id": "easy-50",
+    "title": "Book Easy 50",
+    "author": "Author 50",
+    "year": 1827,
+    "difficulty": "easy",
+    "cover": "https://covers.openlibrary.org/b/id/8231856-L.jpg"
+  },
+  {
+    "id": "easy-51",
+    "title": "Book Easy 51",
+    "author": "Author 51",
+    "year": 1840,
+    "difficulty": "easy",
+    "cover": "https://covers.openlibrary.org/b/id/8231856-L.jpg"
+  },
+  {
+    "id": "easy-52",
+    "title": "Book Easy 52",
+    "author": "Author 52",
+    "year": 1853,
+    "difficulty": "easy",
+    "cover": "https://covers.openlibrary.org/b/id/8231856-L.jpg"
+  },
+  {
+    "id": "easy-53",
+    "title": "Book Easy 53",
+    "author": "Author 53",
+    "year": 1866,
+    "difficulty": "easy",
+    "cover": "https://covers.openlibrary.org/b/id/8231856-L.jpg"
+  },
+  {
+    "id": "easy-54",
+    "title": "Book Easy 54",
+    "author": "Author 54",
+    "year": 1879,
+    "difficulty": "easy",
+    "cover": "https://covers.openlibrary.org/b/id/8231856-L.jpg"
+  },
+  {
+    "id": "easy-55",
+    "title": "Book Easy 55",
+    "author": "Author 55",
+    "year": 1892,
+    "difficulty": "easy",
+    "cover": "https://covers.openlibrary.org/b/id/8231856-L.jpg"
+  },
+  {
+    "id": "easy-56",
+    "title": "Book Easy 56",
+    "author": "Author 56",
+    "year": 1905,
+    "difficulty": "easy",
+    "cover": "https://covers.openlibrary.org/b/id/8231856-L.jpg"
+  },
+  {
+    "id": "easy-57",
+    "title": "Book Easy 57",
+    "author": "Author 57",
+    "year": 1918,
+    "difficulty": "easy",
+    "cover": "https://covers.openlibrary.org/b/id/8231856-L.jpg"
+  },
+  {
+    "id": "easy-58",
+    "title": "Book Easy 58",
+    "author": "Author 58",
+    "year": 1931,
+    "difficulty": "easy",
+    "cover": "https://covers.openlibrary.org/b/id/8231856-L.jpg"
+  },
+  {
+    "id": "easy-59",
+    "title": "Book Easy 59",
+    "author": "Author 59",
+    "year": 1944,
+    "difficulty": "easy",
+    "cover": "https://covers.openlibrary.org/b/id/8231856-L.jpg"
+  },
+  {
+    "id": "easy-60",
+    "title": "Book Easy 60",
+    "author": "Author 60",
+    "year": 1957,
+    "difficulty": "easy",
+    "cover": "https://covers.openlibrary.org/b/id/8231856-L.jpg"
+  },
+  {
+    "id": "easy-61",
+    "title": "Book Easy 61",
+    "author": "Author 61",
+    "year": 1970,
+    "difficulty": "easy",
+    "cover": "https://covers.openlibrary.org/b/id/8231856-L.jpg"
+  },
+  {
+    "id": "easy-62",
+    "title": "Book Easy 62",
+    "author": "Author 62",
+    "year": 1983,
+    "difficulty": "easy",
+    "cover": "https://covers.openlibrary.org/b/id/8231856-L.jpg"
+  },
+  {
+    "id": "easy-63",
+    "title": "Book Easy 63",
+    "author": "Author 63",
+    "year": 1996,
+    "difficulty": "easy",
+    "cover": "https://covers.openlibrary.org/b/id/8231856-L.jpg"
+  },
+  {
+    "id": "easy-64",
+    "title": "Book Easy 64",
+    "author": "Author 64",
+    "year": 2009,
+    "difficulty": "easy",
+    "cover": "https://covers.openlibrary.org/b/id/8231856-L.jpg"
+  },
+  {
+    "id": "easy-65",
+    "title": "Book Easy 65",
+    "author": "Author 65",
+    "year": 1811,
+    "difficulty": "easy",
+    "cover": "https://covers.openlibrary.org/b/id/8231856-L.jpg"
+  },
+  {
+    "id": "easy-66",
+    "title": "Book Easy 66",
+    "author": "Author 66",
+    "year": 1824,
+    "difficulty": "easy",
+    "cover": "https://covers.openlibrary.org/b/id/8231856-L.jpg"
+  },
+  {
+    "id": "easy-67",
+    "title": "Book Easy 67",
+    "author": "Author 67",
+    "year": 1837,
+    "difficulty": "easy",
+    "cover": "https://covers.openlibrary.org/b/id/8231856-L.jpg"
+  },
+  {
+    "id": "easy-68",
+    "title": "Book Easy 68",
+    "author": "Author 68",
+    "year": 1850,
+    "difficulty": "easy",
+    "cover": "https://covers.openlibrary.org/b/id/8231856-L.jpg"
+  },
+  {
+    "id": "easy-69",
+    "title": "Book Easy 69",
+    "author": "Author 69",
+    "year": 1863,
+    "difficulty": "easy",
+    "cover": "https://covers.openlibrary.org/b/id/8231856-L.jpg"
+  },
+  {
+    "id": "easy-70",
+    "title": "Book Easy 70",
+    "author": "Author 70",
+    "year": 1876,
+    "difficulty": "easy",
+    "cover": "https://covers.openlibrary.org/b/id/8231856-L.jpg"
+  },
+  {
+    "id": "easy-71",
+    "title": "Book Easy 71",
+    "author": "Author 71",
+    "year": 1889,
+    "difficulty": "easy",
+    "cover": "https://covers.openlibrary.org/b/id/8231856-L.jpg"
+  },
+  {
+    "id": "easy-72",
+    "title": "Book Easy 72",
+    "author": "Author 72",
+    "year": 1902,
+    "difficulty": "easy",
+    "cover": "https://covers.openlibrary.org/b/id/8231856-L.jpg"
+  },
+  {
+    "id": "easy-73",
+    "title": "Book Easy 73",
+    "author": "Author 73",
+    "year": 1915,
+    "difficulty": "easy",
+    "cover": "https://covers.openlibrary.org/b/id/8231856-L.jpg"
+  },
+  {
+    "id": "easy-74",
+    "title": "Book Easy 74",
+    "author": "Author 74",
+    "year": 1928,
+    "difficulty": "easy",
+    "cover": "https://covers.openlibrary.org/b/id/8231856-L.jpg"
+  },
+  {
+    "id": "easy-75",
+    "title": "Book Easy 75",
+    "author": "Author 75",
+    "year": 1941,
+    "difficulty": "easy",
+    "cover": "https://covers.openlibrary.org/b/id/8231856-L.jpg"
+  },
+  {
+    "id": "easy-76",
+    "title": "Book Easy 76",
+    "author": "Author 76",
+    "year": 1954,
+    "difficulty": "easy",
+    "cover": "https://covers.openlibrary.org/b/id/8231856-L.jpg"
+  },
+  {
+    "id": "easy-77",
+    "title": "Book Easy 77",
+    "author": "Author 77",
+    "year": 1967,
+    "difficulty": "easy",
+    "cover": "https://covers.openlibrary.org/b/id/8231856-L.jpg"
+  },
+  {
+    "id": "easy-78",
+    "title": "Book Easy 78",
+    "author": "Author 78",
+    "year": 1980,
+    "difficulty": "easy",
+    "cover": "https://covers.openlibrary.org/b/id/8231856-L.jpg"
+  },
+  {
+    "id": "easy-79",
+    "title": "Book Easy 79",
+    "author": "Author 79",
+    "year": 1993,
+    "difficulty": "easy",
+    "cover": "https://covers.openlibrary.org/b/id/8231856-L.jpg"
+  },
+  {
+    "id": "easy-80",
+    "title": "Book Easy 80",
+    "author": "Author 80",
+    "year": 2006,
+    "difficulty": "easy",
+    "cover": "https://covers.openlibrary.org/b/id/8231856-L.jpg"
+  },
+  {
+    "id": "easy-81",
+    "title": "Book Easy 81",
+    "author": "Author 81",
+    "year": 2019,
+    "difficulty": "easy",
+    "cover": "https://covers.openlibrary.org/b/id/8231856-L.jpg"
+  },
+  {
+    "id": "easy-82",
+    "title": "Book Easy 82",
+    "author": "Author 82",
+    "year": 1821,
+    "difficulty": "easy",
+    "cover": "https://covers.openlibrary.org/b/id/8231856-L.jpg"
+  },
+  {
+    "id": "easy-83",
+    "title": "Book Easy 83",
+    "author": "Author 83",
+    "year": 1834,
+    "difficulty": "easy",
+    "cover": "https://covers.openlibrary.org/b/id/8231856-L.jpg"
+  },
+  {
+    "id": "easy-84",
+    "title": "Book Easy 84",
+    "author": "Author 84",
+    "year": 1847,
+    "difficulty": "easy",
+    "cover": "https://covers.openlibrary.org/b/id/8231856-L.jpg"
+  },
+  {
+    "id": "easy-85",
+    "title": "Book Easy 85",
+    "author": "Author 85",
+    "year": 1860,
+    "difficulty": "easy",
+    "cover": "https://covers.openlibrary.org/b/id/8231856-L.jpg"
+  },
+  {
+    "id": "easy-86",
+    "title": "Book Easy 86",
+    "author": "Author 86",
+    "year": 1873,
+    "difficulty": "easy",
+    "cover": "https://covers.openlibrary.org/b/id/8231856-L.jpg"
+  },
+  {
+    "id": "easy-87",
+    "title": "Book Easy 87",
+    "author": "Author 87",
+    "year": 1886,
+    "difficulty": "easy",
+    "cover": "https://covers.openlibrary.org/b/id/8231856-L.jpg"
+  },
+  {
+    "id": "easy-88",
+    "title": "Book Easy 88",
+    "author": "Author 88",
+    "year": 1899,
+    "difficulty": "easy",
+    "cover": "https://covers.openlibrary.org/b/id/8231856-L.jpg"
+  },
+  {
+    "id": "easy-89",
+    "title": "Book Easy 89",
+    "author": "Author 89",
+    "year": 1912,
+    "difficulty": "easy",
+    "cover": "https://covers.openlibrary.org/b/id/8231856-L.jpg"
+  },
+  {
+    "id": "easy-90",
+    "title": "Book Easy 90",
+    "author": "Author 90",
+    "year": 1925,
+    "difficulty": "easy",
+    "cover": "https://covers.openlibrary.org/b/id/8231856-L.jpg"
+  },
+  {
+    "id": "easy-91",
+    "title": "Book Easy 91",
+    "author": "Author 91",
+    "year": 1938,
+    "difficulty": "easy",
+    "cover": "https://covers.openlibrary.org/b/id/8231856-L.jpg"
+  },
+  {
+    "id": "easy-92",
+    "title": "Book Easy 92",
+    "author": "Author 92",
+    "year": 1951,
+    "difficulty": "easy",
+    "cover": "https://covers.openlibrary.org/b/id/8231856-L.jpg"
+  },
+  {
+    "id": "easy-93",
+    "title": "Book Easy 93",
+    "author": "Author 93",
+    "year": 1964,
+    "difficulty": "easy",
+    "cover": "https://covers.openlibrary.org/b/id/8231856-L.jpg"
+  },
+  {
+    "id": "easy-94",
+    "title": "Book Easy 94",
+    "author": "Author 94",
+    "year": 1977,
+    "difficulty": "easy",
+    "cover": "https://covers.openlibrary.org/b/id/8231856-L.jpg"
+  },
+  {
+    "id": "easy-95",
+    "title": "Book Easy 95",
+    "author": "Author 95",
+    "year": 1990,
+    "difficulty": "easy",
+    "cover": "https://covers.openlibrary.org/b/id/8231856-L.jpg"
+  },
+  {
+    "id": "easy-96",
+    "title": "Book Easy 96",
+    "author": "Author 96",
+    "year": 2003,
+    "difficulty": "easy",
+    "cover": "https://covers.openlibrary.org/b/id/8231856-L.jpg"
+  },
+  {
+    "id": "easy-97",
+    "title": "Book Easy 97",
+    "author": "Author 97",
+    "year": 2016,
+    "difficulty": "easy",
+    "cover": "https://covers.openlibrary.org/b/id/8231856-L.jpg"
+  },
+  {
+    "id": "easy-98",
+    "title": "Book Easy 98",
+    "author": "Author 98",
+    "year": 1818,
+    "difficulty": "easy",
+    "cover": "https://covers.openlibrary.org/b/id/8231856-L.jpg"
+  },
+  {
+    "id": "easy-99",
+    "title": "Book Easy 99",
+    "author": "Author 99",
+    "year": 1831,
+    "difficulty": "easy",
+    "cover": "https://covers.openlibrary.org/b/id/8231856-L.jpg"
+  },
+  {
+    "id": "easy-100",
+    "title": "Book Easy 100",
+    "author": "Author 100",
+    "year": 1844,
+    "difficulty": "easy",
+    "cover": "https://covers.openlibrary.org/b/id/8231856-L.jpg"
+  },
+  {
+    "id": "medium-1",
+    "title": "A Montanha Magica",
+    "author": "Thomas Mann",
+    "year": 1924,
+    "difficulty": "medium",
+    "cover": "https://covers.openlibrary.org/b/id/8235117-L.jpg"
+  },
+  {
+    "id": "medium-2",
+    "title": "Vidas Secas",
+    "author": "Graciliano Ramos",
+    "year": 1938,
+    "difficulty": "medium",
+    "cover": "https://covers.openlibrary.org/b/id/8236148-L.jpg"
+  },
+  {
+    "id": "medium-3",
+    "title": "Lavoura Arcaica",
+    "author": "Raduan Nassar",
+    "year": 1975,
+    "difficulty": "medium",
+    "cover": "https://covers.openlibrary.org/b/id/10429079-L.jpg"
+  },
+  {
+    "id": "medium-4",
+    "title": "Neuromancer",
+    "author": "William Gibson",
+    "year": 1984,
+    "difficulty": "medium",
+    "cover": "https://covers.openlibrary.org/b/id/8225631-L.jpg"
+  },
+  {
+    "id": "medium-5",
+    "title": "Ensaio sobre a Cegueira",
+    "author": "Jose Saramago",
+    "year": 1995,
+    "difficulty": "medium",
+    "cover": "https://covers.openlibrary.org/b/id/8231997-L.jpg"
+  },
+  {
+    "id": "medium-6",
+    "title": "As Intermitencias da Morte",
+    "author": "Jose Saramago",
+    "year": 2005,
+    "difficulty": "medium",
+    "cover": "https://covers.openlibrary.org/b/id/8752451-L.jpg"
+  },
+  {
+    "id": "medium-7",
+    "title": "Middlesex",
+    "author": "Jeffrey Eugenides",
+    "year": 2002,
+    "difficulty": "medium",
+    "cover": "https://covers.openlibrary.org/b/id/8494384-L.jpg"
+  },
+  {
+    "id": "medium-8",
+    "title": "A Sombra do Vento",
+    "author": "Carlos Ruiz Zafon",
+    "year": 2001,
+    "difficulty": "medium",
+    "cover": "https://covers.openlibrary.org/b/id/240726-L.jpg"
+  },
+  {
+    "id": "medium-9",
+    "title": "Orlando",
+    "author": "Virginia Woolf",
+    "year": 1928,
+    "difficulty": "medium",
+    "cover": "https://covers.openlibrary.org/b/id/8228784-L.jpg"
+  },
+  {
+    "id": "medium-10",
+    "title": "A Vida Modo de Usar",
+    "author": "Georges Perec",
+    "year": 1978,
+    "difficulty": "medium",
+    "cover": "https://covers.openlibrary.org/b/id/8752415-L.jpg"
+  },
+  {
+    "id": "medium-11",
+    "title": "Book Medium 11",
+    "author": "Author 11",
+    "year": 1993,
+    "difficulty": "medium",
+    "cover": "https://covers.openlibrary.org/b/id/8231856-L.jpg"
+  },
+  {
+    "id": "medium-12",
+    "title": "Book Medium 12",
+    "author": "Author 12",
+    "year": 2006,
+    "difficulty": "medium",
+    "cover": "https://covers.openlibrary.org/b/id/8231856-L.jpg"
+  },
+  {
+    "id": "medium-13",
+    "title": "Book Medium 13",
+    "author": "Author 13",
+    "year": 2019,
+    "difficulty": "medium",
+    "cover": "https://covers.openlibrary.org/b/id/8231856-L.jpg"
+  },
+  {
+    "id": "medium-14",
+    "title": "Book Medium 14",
+    "author": "Author 14",
+    "year": 1859,
+    "difficulty": "medium",
+    "cover": "https://covers.openlibrary.org/b/id/8231856-L.jpg"
+  },
+  {
+    "id": "medium-15",
+    "title": "Book Medium 15",
+    "author": "Author 15",
+    "year": 1872,
+    "difficulty": "medium",
+    "cover": "https://covers.openlibrary.org/b/id/8231856-L.jpg"
+  },
+  {
+    "id": "medium-16",
+    "title": "Book Medium 16",
+    "author": "Author 16",
+    "year": 1885,
+    "difficulty": "medium",
+    "cover": "https://covers.openlibrary.org/b/id/8231856-L.jpg"
+  },
+  {
+    "id": "medium-17",
+    "title": "Book Medium 17",
+    "author": "Author 17",
+    "year": 1898,
+    "difficulty": "medium",
+    "cover": "https://covers.openlibrary.org/b/id/8231856-L.jpg"
+  },
+  {
+    "id": "medium-18",
+    "title": "Book Medium 18",
+    "author": "Author 18",
+    "year": 1911,
+    "difficulty": "medium",
+    "cover": "https://covers.openlibrary.org/b/id/8231856-L.jpg"
+  },
+  {
+    "id": "medium-19",
+    "title": "Book Medium 19",
+    "author": "Author 19",
+    "year": 1924,
+    "difficulty": "medium",
+    "cover": "https://covers.openlibrary.org/b/id/8231856-L.jpg"
+  },
+  {
+    "id": "medium-20",
+    "title": "Book Medium 20",
+    "author": "Author 20",
+    "year": 1937,
+    "difficulty": "medium",
+    "cover": "https://covers.openlibrary.org/b/id/8231856-L.jpg"
+  },
+  {
+    "id": "medium-21",
+    "title": "Book Medium 21",
+    "author": "Author 21",
+    "year": 1950,
+    "difficulty": "medium",
+    "cover": "https://covers.openlibrary.org/b/id/8231856-L.jpg"
+  },
+  {
+    "id": "medium-22",
+    "title": "Book Medium 22",
+    "author": "Author 22",
+    "year": 1963,
+    "difficulty": "medium",
+    "cover": "https://covers.openlibrary.org/b/id/8231856-L.jpg"
+  },
+  {
+    "id": "medium-23",
+    "title": "Book Medium 23",
+    "author": "Author 23",
+    "year": 1976,
+    "difficulty": "medium",
+    "cover": "https://covers.openlibrary.org/b/id/8231856-L.jpg"
+  },
+  {
+    "id": "medium-24",
+    "title": "Book Medium 24",
+    "author": "Author 24",
+    "year": 1989,
+    "difficulty": "medium",
+    "cover": "https://covers.openlibrary.org/b/id/8231856-L.jpg"
+  },
+  {
+    "id": "medium-25",
+    "title": "Book Medium 25",
+    "author": "Author 25",
+    "year": 2002,
+    "difficulty": "medium",
+    "cover": "https://covers.openlibrary.org/b/id/8231856-L.jpg"
+  },
+  {
+    "id": "medium-26",
+    "title": "Book Medium 26",
+    "author": "Author 26",
+    "year": 2015,
+    "difficulty": "medium",
+    "cover": "https://covers.openlibrary.org/b/id/8231856-L.jpg"
+  },
+  {
+    "id": "medium-27",
+    "title": "Book Medium 27",
+    "author": "Author 27",
+    "year": 1855,
+    "difficulty": "medium",
+    "cover": "https://covers.openlibrary.org/b/id/8231856-L.jpg"
+  },
+  {
+    "id": "medium-28",
+    "title": "Book Medium 28",
+    "author": "Author 28",
+    "year": 1868,
+    "difficulty": "medium",
+    "cover": "https://covers.openlibrary.org/b/id/8231856-L.jpg"
+  },
+  {
+    "id": "medium-29",
+    "title": "Book Medium 29",
+    "author": "Author 29",
+    "year": 1881,
+    "difficulty": "medium",
+    "cover": "https://covers.openlibrary.org/b/id/8231856-L.jpg"
+  },
+  {
+    "id": "medium-30",
+    "title": "Book Medium 30",
+    "author": "Author 30",
+    "year": 1894,
+    "difficulty": "medium",
+    "cover": "https://covers.openlibrary.org/b/id/8231856-L.jpg"
+  },
+  {
+    "id": "medium-31",
+    "title": "Book Medium 31",
+    "author": "Author 31",
+    "year": 1907,
+    "difficulty": "medium",
+    "cover": "https://covers.openlibrary.org/b/id/8231856-L.jpg"
+  },
+  {
+    "id": "medium-32",
+    "title": "Book Medium 32",
+    "author": "Author 32",
+    "year": 1920,
+    "difficulty": "medium",
+    "cover": "https://covers.openlibrary.org/b/id/8231856-L.jpg"
+  },
+  {
+    "id": "medium-33",
+    "title": "Book Medium 33",
+    "author": "Author 33",
+    "year": 1933,
+    "difficulty": "medium",
+    "cover": "https://covers.openlibrary.org/b/id/8231856-L.jpg"
+  },
+  {
+    "id": "medium-34",
+    "title": "Book Medium 34",
+    "author": "Author 34",
+    "year": 1946,
+    "difficulty": "medium",
+    "cover": "https://covers.openlibrary.org/b/id/8231856-L.jpg"
+  },
+  {
+    "id": "medium-35",
+    "title": "Book Medium 35",
+    "author": "Author 35",
+    "year": 1959,
+    "difficulty": "medium",
+    "cover": "https://covers.openlibrary.org/b/id/8231856-L.jpg"
+  },
+  {
+    "id": "medium-36",
+    "title": "Book Medium 36",
+    "author": "Author 36",
+    "year": 1972,
+    "difficulty": "medium",
+    "cover": "https://covers.openlibrary.org/b/id/8231856-L.jpg"
+  },
+  {
+    "id": "medium-37",
+    "title": "Book Medium 37",
+    "author": "Author 37",
+    "year": 1985,
+    "difficulty": "medium",
+    "cover": "https://covers.openlibrary.org/b/id/8231856-L.jpg"
+  },
+  {
+    "id": "medium-38",
+    "title": "Book Medium 38",
+    "author": "Author 38",
+    "year": 1998,
+    "difficulty": "medium",
+    "cover": "https://covers.openlibrary.org/b/id/8231856-L.jpg"
+  },
+  {
+    "id": "medium-39",
+    "title": "Book Medium 39",
+    "author": "Author 39",
+    "year": 2011,
+    "difficulty": "medium",
+    "cover": "https://covers.openlibrary.org/b/id/8231856-L.jpg"
+  },
+  {
+    "id": "medium-40",
+    "title": "Book Medium 40",
+    "author": "Author 40",
+    "year": 1851,
+    "difficulty": "medium",
+    "cover": "https://covers.openlibrary.org/b/id/8231856-L.jpg"
+  },
+  {
+    "id": "medium-41",
+    "title": "Book Medium 41",
+    "author": "Author 41",
+    "year": 1864,
+    "difficulty": "medium",
+    "cover": "https://covers.openlibrary.org/b/id/8231856-L.jpg"
+  },
+  {
+    "id": "medium-42",
+    "title": "Book Medium 42",
+    "author": "Author 42",
+    "year": 1877,
+    "difficulty": "medium",
+    "cover": "https://covers.openlibrary.org/b/id/8231856-L.jpg"
+  },
+  {
+    "id": "medium-43",
+    "title": "Book Medium 43",
+    "author": "Author 43",
+    "year": 1890,
+    "difficulty": "medium",
+    "cover": "https://covers.openlibrary.org/b/id/8231856-L.jpg"
+  },
+  {
+    "id": "medium-44",
+    "title": "Book Medium 44",
+    "author": "Author 44",
+    "year": 1903,
+    "difficulty": "medium",
+    "cover": "https://covers.openlibrary.org/b/id/8231856-L.jpg"
+  },
+  {
+    "id": "medium-45",
+    "title": "Book Medium 45",
+    "author": "Author 45",
+    "year": 1916,
+    "difficulty": "medium",
+    "cover": "https://covers.openlibrary.org/b/id/8231856-L.jpg"
+  },
+  {
+    "id": "medium-46",
+    "title": "Book Medium 46",
+    "author": "Author 46",
+    "year": 1929,
+    "difficulty": "medium",
+    "cover": "https://covers.openlibrary.org/b/id/8231856-L.jpg"
+  },
+  {
+    "id": "medium-47",
+    "title": "Book Medium 47",
+    "author": "Author 47",
+    "year": 1942,
+    "difficulty": "medium",
+    "cover": "https://covers.openlibrary.org/b/id/8231856-L.jpg"
+  },
+  {
+    "id": "medium-48",
+    "title": "Book Medium 48",
+    "author": "Author 48",
+    "year": 1955,
+    "difficulty": "medium",
+    "cover": "https://covers.openlibrary.org/b/id/8231856-L.jpg"
+  },
+  {
+    "id": "medium-49",
+    "title": "Book Medium 49",
+    "author": "Author 49",
+    "year": 1968,
+    "difficulty": "medium",
+    "cover": "https://covers.openlibrary.org/b/id/8231856-L.jpg"
+  },
+  {
+    "id": "medium-50",
+    "title": "Book Medium 50",
+    "author": "Author 50",
+    "year": 1981,
+    "difficulty": "medium",
+    "cover": "https://covers.openlibrary.org/b/id/8231856-L.jpg"
+  },
+  {
+    "id": "medium-51",
+    "title": "Book Medium 51",
+    "author": "Author 51",
+    "year": 1994,
+    "difficulty": "medium",
+    "cover": "https://covers.openlibrary.org/b/id/8231856-L.jpg"
+  },
+  {
+    "id": "medium-52",
+    "title": "Book Medium 52",
+    "author": "Author 52",
+    "year": 2007,
+    "difficulty": "medium",
+    "cover": "https://covers.openlibrary.org/b/id/8231856-L.jpg"
+  },
+  {
+    "id": "medium-53",
+    "title": "Book Medium 53",
+    "author": "Author 53",
+    "year": 2020,
+    "difficulty": "medium",
+    "cover": "https://covers.openlibrary.org/b/id/8231856-L.jpg"
+  },
+  {
+    "id": "medium-54",
+    "title": "Book Medium 54",
+    "author": "Author 54",
+    "year": 1860,
+    "difficulty": "medium",
+    "cover": "https://covers.openlibrary.org/b/id/8231856-L.jpg"
+  },
+  {
+    "id": "medium-55",
+    "title": "Book Medium 55",
+    "author": "Author 55",
+    "year": 1873,
+    "difficulty": "medium",
+    "cover": "https://covers.openlibrary.org/b/id/8231856-L.jpg"
+  },
+  {
+    "id": "medium-56",
+    "title": "Book Medium 56",
+    "author": "Author 56",
+    "year": 1886,
+    "difficulty": "medium",
+    "cover": "https://covers.openlibrary.org/b/id/8231856-L.jpg"
+  },
+  {
+    "id": "medium-57",
+    "title": "Book Medium 57",
+    "author": "Author 57",
+    "year": 1899,
+    "difficulty": "medium",
+    "cover": "https://covers.openlibrary.org/b/id/8231856-L.jpg"
+  },
+  {
+    "id": "medium-58",
+    "title": "Book Medium 58",
+    "author": "Author 58",
+    "year": 1912,
+    "difficulty": "medium",
+    "cover": "https://covers.openlibrary.org/b/id/8231856-L.jpg"
+  },
+  {
+    "id": "medium-59",
+    "title": "Book Medium 59",
+    "author": "Author 59",
+    "year": 1925,
+    "difficulty": "medium",
+    "cover": "https://covers.openlibrary.org/b/id/8231856-L.jpg"
+  },
+  {
+    "id": "medium-60",
+    "title": "Book Medium 60",
+    "author": "Author 60",
+    "year": 1938,
+    "difficulty": "medium",
+    "cover": "https://covers.openlibrary.org/b/id/8231856-L.jpg"
+  },
+  {
+    "id": "medium-61",
+    "title": "Book Medium 61",
+    "author": "Author 61",
+    "year": 1951,
+    "difficulty": "medium",
+    "cover": "https://covers.openlibrary.org/b/id/8231856-L.jpg"
+  },
+  {
+    "id": "medium-62",
+    "title": "Book Medium 62",
+    "author": "Author 62",
+    "year": 1964,
+    "difficulty": "medium",
+    "cover": "https://covers.openlibrary.org/b/id/8231856-L.jpg"
+  },
+  {
+    "id": "medium-63",
+    "title": "Book Medium 63",
+    "author": "Author 63",
+    "year": 1977,
+    "difficulty": "medium",
+    "cover": "https://covers.openlibrary.org/b/id/8231856-L.jpg"
+  },
+  {
+    "id": "medium-64",
+    "title": "Book Medium 64",
+    "author": "Author 64",
+    "year": 1990,
+    "difficulty": "medium",
+    "cover": "https://covers.openlibrary.org/b/id/8231856-L.jpg"
+  },
+  {
+    "id": "medium-65",
+    "title": "Book Medium 65",
+    "author": "Author 65",
+    "year": 2003,
+    "difficulty": "medium",
+    "cover": "https://covers.openlibrary.org/b/id/8231856-L.jpg"
+  },
+  {
+    "id": "medium-66",
+    "title": "Book Medium 66",
+    "author": "Author 66",
+    "year": 2016,
+    "difficulty": "medium",
+    "cover": "https://covers.openlibrary.org/b/id/8231856-L.jpg"
+  },
+  {
+    "id": "medium-67",
+    "title": "Book Medium 67",
+    "author": "Author 67",
+    "year": 1856,
+    "difficulty": "medium",
+    "cover": "https://covers.openlibrary.org/b/id/8231856-L.jpg"
+  },
+  {
+    "id": "medium-68",
+    "title": "Book Medium 68",
+    "author": "Author 68",
+    "year": 1869,
+    "difficulty": "medium",
+    "cover": "https://covers.openlibrary.org/b/id/8231856-L.jpg"
+  },
+  {
+    "id": "medium-69",
+    "title": "Book Medium 69",
+    "author": "Author 69",
+    "year": 1882,
+    "difficulty": "medium",
+    "cover": "https://covers.openlibrary.org/b/id/8231856-L.jpg"
+  },
+  {
+    "id": "medium-70",
+    "title": "Book Medium 70",
+    "author": "Author 70",
+    "year": 1895,
+    "difficulty": "medium",
+    "cover": "https://covers.openlibrary.org/b/id/8231856-L.jpg"
+  },
+  {
+    "id": "medium-71",
+    "title": "Book Medium 71",
+    "author": "Author 71",
+    "year": 1908,
+    "difficulty": "medium",
+    "cover": "https://covers.openlibrary.org/b/id/8231856-L.jpg"
+  },
+  {
+    "id": "medium-72",
+    "title": "Book Medium 72",
+    "author": "Author 72",
+    "year": 1921,
+    "difficulty": "medium",
+    "cover": "https://covers.openlibrary.org/b/id/8231856-L.jpg"
+  },
+  {
+    "id": "medium-73",
+    "title": "Book Medium 73",
+    "author": "Author 73",
+    "year": 1934,
+    "difficulty": "medium",
+    "cover": "https://covers.openlibrary.org/b/id/8231856-L.jpg"
+  },
+  {
+    "id": "medium-74",
+    "title": "Book Medium 74",
+    "author": "Author 74",
+    "year": 1947,
+    "difficulty": "medium",
+    "cover": "https://covers.openlibrary.org/b/id/8231856-L.jpg"
+  },
+  {
+    "id": "medium-75",
+    "title": "Book Medium 75",
+    "author": "Author 75",
+    "year": 1960,
+    "difficulty": "medium",
+    "cover": "https://covers.openlibrary.org/b/id/8231856-L.jpg"
+  },
+  {
+    "id": "medium-76",
+    "title": "Book Medium 76",
+    "author": "Author 76",
+    "year": 1973,
+    "difficulty": "medium",
+    "cover": "https://covers.openlibrary.org/b/id/8231856-L.jpg"
+  },
+  {
+    "id": "medium-77",
+    "title": "Book Medium 77",
+    "author": "Author 77",
+    "year": 1986,
+    "difficulty": "medium",
+    "cover": "https://covers.openlibrary.org/b/id/8231856-L.jpg"
+  },
+  {
+    "id": "medium-78",
+    "title": "Book Medium 78",
+    "author": "Author 78",
+    "year": 1999,
+    "difficulty": "medium",
+    "cover": "https://covers.openlibrary.org/b/id/8231856-L.jpg"
+  },
+  {
+    "id": "medium-79",
+    "title": "Book Medium 79",
+    "author": "Author 79",
+    "year": 2012,
+    "difficulty": "medium",
+    "cover": "https://covers.openlibrary.org/b/id/8231856-L.jpg"
+  },
+  {
+    "id": "medium-80",
+    "title": "Book Medium 80",
+    "author": "Author 80",
+    "year": 1852,
+    "difficulty": "medium",
+    "cover": "https://covers.openlibrary.org/b/id/8231856-L.jpg"
+  },
+  {
+    "id": "medium-81",
+    "title": "Book Medium 81",
+    "author": "Author 81",
+    "year": 1865,
+    "difficulty": "medium",
+    "cover": "https://covers.openlibrary.org/b/id/8231856-L.jpg"
+  },
+  {
+    "id": "medium-82",
+    "title": "Book Medium 82",
+    "author": "Author 82",
+    "year": 1878,
+    "difficulty": "medium",
+    "cover": "https://covers.openlibrary.org/b/id/8231856-L.jpg"
+  },
+  {
+    "id": "medium-83",
+    "title": "Book Medium 83",
+    "author": "Author 83",
+    "year": 1891,
+    "difficulty": "medium",
+    "cover": "https://covers.openlibrary.org/b/id/8231856-L.jpg"
+  },
+  {
+    "id": "medium-84",
+    "title": "Book Medium 84",
+    "author": "Author 84",
+    "year": 1904,
+    "difficulty": "medium",
+    "cover": "https://covers.openlibrary.org/b/id/8231856-L.jpg"
+  },
+  {
+    "id": "medium-85",
+    "title": "Book Medium 85",
+    "author": "Author 85",
+    "year": 1917,
+    "difficulty": "medium",
+    "cover": "https://covers.openlibrary.org/b/id/8231856-L.jpg"
+  },
+  {
+    "id": "medium-86",
+    "title": "Book Medium 86",
+    "author": "Author 86",
+    "year": 1930,
+    "difficulty": "medium",
+    "cover": "https://covers.openlibrary.org/b/id/8231856-L.jpg"
+  },
+  {
+    "id": "medium-87",
+    "title": "Book Medium 87",
+    "author": "Author 87",
+    "year": 1943,
+    "difficulty": "medium",
+    "cover": "https://covers.openlibrary.org/b/id/8231856-L.jpg"
+  },
+  {
+    "id": "medium-88",
+    "title": "Book Medium 88",
+    "author": "Author 88",
+    "year": 1956,
+    "difficulty": "medium",
+    "cover": "https://covers.openlibrary.org/b/id/8231856-L.jpg"
+  },
+  {
+    "id": "medium-89",
+    "title": "Book Medium 89",
+    "author": "Author 89",
+    "year": 1969,
+    "difficulty": "medium",
+    "cover": "https://covers.openlibrary.org/b/id/8231856-L.jpg"
+  },
+  {
+    "id": "medium-90",
+    "title": "Book Medium 90",
+    "author": "Author 90",
+    "year": 1982,
+    "difficulty": "medium",
+    "cover": "https://covers.openlibrary.org/b/id/8231856-L.jpg"
+  },
+  {
+    "id": "medium-91",
+    "title": "Book Medium 91",
+    "author": "Author 91",
+    "year": 1995,
+    "difficulty": "medium",
+    "cover": "https://covers.openlibrary.org/b/id/8231856-L.jpg"
+  },
+  {
+    "id": "medium-92",
+    "title": "Book Medium 92",
+    "author": "Author 92",
+    "year": 2008,
+    "difficulty": "medium",
+    "cover": "https://covers.openlibrary.org/b/id/8231856-L.jpg"
+  },
+  {
+    "id": "medium-93",
+    "title": "Book Medium 93",
+    "author": "Author 93",
+    "year": 2021,
+    "difficulty": "medium",
+    "cover": "https://covers.openlibrary.org/b/id/8231856-L.jpg"
+  },
+  {
+    "id": "medium-94",
+    "title": "Book Medium 94",
+    "author": "Author 94",
+    "year": 1861,
+    "difficulty": "medium",
+    "cover": "https://covers.openlibrary.org/b/id/8231856-L.jpg"
+  },
+  {
+    "id": "medium-95",
+    "title": "Book Medium 95",
+    "author": "Author 95",
+    "year": 1874,
+    "difficulty": "medium",
+    "cover": "https://covers.openlibrary.org/b/id/8231856-L.jpg"
+  },
+  {
+    "id": "medium-96",
+    "title": "Book Medium 96",
+    "author": "Author 96",
+    "year": 1887,
+    "difficulty": "medium",
+    "cover": "https://covers.openlibrary.org/b/id/8231856-L.jpg"
+  },
+  {
+    "id": "medium-97",
+    "title": "Book Medium 97",
+    "author": "Author 97",
+    "year": 1900,
+    "difficulty": "medium",
+    "cover": "https://covers.openlibrary.org/b/id/8231856-L.jpg"
+  },
+  {
+    "id": "medium-98",
+    "title": "Book Medium 98",
+    "author": "Author 98",
+    "year": 1913,
+    "difficulty": "medium",
+    "cover": "https://covers.openlibrary.org/b/id/8231856-L.jpg"
+  },
+  {
+    "id": "medium-99",
+    "title": "Book Medium 99",
+    "author": "Author 99",
+    "year": 1926,
+    "difficulty": "medium",
+    "cover": "https://covers.openlibrary.org/b/id/8231856-L.jpg"
+  },
+  {
+    "id": "medium-100",
+    "title": "Book Medium 100",
+    "author": "Author 100",
+    "year": 1939,
+    "difficulty": "medium",
+    "cover": "https://covers.openlibrary.org/b/id/8231856-L.jpg"
+  },
+  {
+    "id": "hard-1",
+    "title": "Pedro Paramo",
+    "author": "Juan Rulfo",
+    "year": 1955,
+    "difficulty": "hard",
+    "cover": "https://covers.openlibrary.org/b/id/8231712-L.jpg"
+  },
+  {
+    "id": "hard-2",
+    "title": "2666",
+    "author": "Roberto Bolano",
+    "year": 2004,
+    "difficulty": "hard",
+    "cover": "https://covers.openlibrary.org/b/id/8232004-L.jpg"
+  },
+  {
+    "id": "hard-3",
+    "title": "A Paixao Segundo G. H.",
+    "author": "Clarice Lispector",
+    "year": 1964,
+    "difficulty": "hard",
+    "cover": "https://covers.openlibrary.org/b/id/10235573-L.jpg"
+  },
+  {
+    "id": "hard-4",
+    "title": "Molloy",
+    "author": "Samuel Beckett",
+    "year": 1951,
+    "difficulty": "hard",
+    "cover": "https://covers.openlibrary.org/b/id/8234895-L.jpg"
+  },
+  {
+    "id": "hard-5",
+    "title": "Rayuela",
+    "author": "Julio Cortazar",
+    "year": 1963,
+    "difficulty": "hard",
+    "cover": "https://covers.openlibrary.org/b/id/8231649-L.jpg"
+  },
+  {
+    "id": "hard-6",
+    "title": "As Benevolentes",
+    "author": "Jonathan Littell",
+    "year": 2006,
+    "difficulty": "hard",
+    "cover": "https://covers.openlibrary.org/b/id/8752453-L.jpg"
+  },
+  {
+    "id": "hard-7",
+    "title": "Satantango",
+    "author": "Laszlo Krasznahorkai",
+    "year": 1985,
+    "difficulty": "hard",
+    "cover": "https://covers.openlibrary.org/b/id/8234763-L.jpg"
+  },
+  {
+    "id": "hard-8",
+    "title": "Os Detectives Selvagens",
+    "author": "Roberto Bolano",
+    "year": 1998,
+    "difficulty": "hard",
+    "cover": "https://covers.openlibrary.org/b/id/8232007-L.jpg"
+  },
+  {
+    "id": "hard-9",
+    "title": "A Obscena Senhora D",
+    "author": "Hilda Hilst",
+    "year": 1982,
+    "difficulty": "hard",
+    "cover": "https://covers.openlibrary.org/b/id/10429084-L.jpg"
+  },
+  {
+    "id": "hard-10",
+    "title": "Paisagem com Dromedario",
+    "author": "Carola Saavedra",
+    "year": 2010,
+    "difficulty": "hard",
+    "cover": "https://covers.openlibrary.org/b/id/10429093-L.jpg"
+  },
+  {
+    "id": "hard-11",
+    "title": "Book Hard 11",
+    "author": "Author 11",
+    "year": 1918,
+    "difficulty": "hard",
+    "cover": "https://covers.openlibrary.org/b/id/8231856-L.jpg"
+  },
+  {
+    "id": "hard-12",
+    "title": "Book Hard 12",
+    "author": "Author 12",
+    "year": 1931,
+    "difficulty": "hard",
+    "cover": "https://covers.openlibrary.org/b/id/8231856-L.jpg"
+  },
+  {
+    "id": "hard-13",
+    "title": "Book Hard 13",
+    "author": "Author 13",
+    "year": 1944,
+    "difficulty": "hard",
+    "cover": "https://covers.openlibrary.org/b/id/8231856-L.jpg"
+  },
+  {
+    "id": "hard-14",
+    "title": "Book Hard 14",
+    "author": "Author 14",
+    "year": 1957,
+    "difficulty": "hard",
+    "cover": "https://covers.openlibrary.org/b/id/8231856-L.jpg"
+  },
+  {
+    "id": "hard-15",
+    "title": "Book Hard 15",
+    "author": "Author 15",
+    "year": 1970,
+    "difficulty": "hard",
+    "cover": "https://covers.openlibrary.org/b/id/8231856-L.jpg"
+  },
+  {
+    "id": "hard-16",
+    "title": "Book Hard 16",
+    "author": "Author 16",
+    "year": 1983,
+    "difficulty": "hard",
+    "cover": "https://covers.openlibrary.org/b/id/8231856-L.jpg"
+  },
+  {
+    "id": "hard-17",
+    "title": "Book Hard 17",
+    "author": "Author 17",
+    "year": 1996,
+    "difficulty": "hard",
+    "cover": "https://covers.openlibrary.org/b/id/8231856-L.jpg"
+  },
+  {
+    "id": "hard-18",
+    "title": "Book Hard 18",
+    "author": "Author 18",
+    "year": 2009,
+    "difficulty": "hard",
+    "cover": "https://covers.openlibrary.org/b/id/8231856-L.jpg"
+  },
+  {
+    "id": "hard-19",
+    "title": "Book Hard 19",
+    "author": "Author 19",
+    "year": 2022,
+    "difficulty": "hard",
+    "cover": "https://covers.openlibrary.org/b/id/8231856-L.jpg"
+  },
+  {
+    "id": "hard-20",
+    "title": "Book Hard 20",
+    "author": "Author 20",
+    "year": 1910,
+    "difficulty": "hard",
+    "cover": "https://covers.openlibrary.org/b/id/8231856-L.jpg"
+  },
+  {
+    "id": "hard-21",
+    "title": "Book Hard 21",
+    "author": "Author 21",
+    "year": 1923,
+    "difficulty": "hard",
+    "cover": "https://covers.openlibrary.org/b/id/8231856-L.jpg"
+  },
+  {
+    "id": "hard-22",
+    "title": "Book Hard 22",
+    "author": "Author 22",
+    "year": 1936,
+    "difficulty": "hard",
+    "cover": "https://covers.openlibrary.org/b/id/8231856-L.jpg"
+  },
+  {
+    "id": "hard-23",
+    "title": "Book Hard 23",
+    "author": "Author 23",
+    "year": 1949,
+    "difficulty": "hard",
+    "cover": "https://covers.openlibrary.org/b/id/8231856-L.jpg"
+  },
+  {
+    "id": "hard-24",
+    "title": "Book Hard 24",
+    "author": "Author 24",
+    "year": 1962,
+    "difficulty": "hard",
+    "cover": "https://covers.openlibrary.org/b/id/8231856-L.jpg"
+  },
+  {
+    "id": "hard-25",
+    "title": "Book Hard 25",
+    "author": "Author 25",
+    "year": 1975,
+    "difficulty": "hard",
+    "cover": "https://covers.openlibrary.org/b/id/8231856-L.jpg"
+  },
+  {
+    "id": "hard-26",
+    "title": "Book Hard 26",
+    "author": "Author 26",
+    "year": 1988,
+    "difficulty": "hard",
+    "cover": "https://covers.openlibrary.org/b/id/8231856-L.jpg"
+  },
+  {
+    "id": "hard-27",
+    "title": "Book Hard 27",
+    "author": "Author 27",
+    "year": 2001,
+    "difficulty": "hard",
+    "cover": "https://covers.openlibrary.org/b/id/8231856-L.jpg"
+  },
+  {
+    "id": "hard-28",
+    "title": "Book Hard 28",
+    "author": "Author 28",
+    "year": 2014,
+    "difficulty": "hard",
+    "cover": "https://covers.openlibrary.org/b/id/8231856-L.jpg"
+  },
+  {
+    "id": "hard-29",
+    "title": "Book Hard 29",
+    "author": "Author 29",
+    "year": 1902,
+    "difficulty": "hard",
+    "cover": "https://covers.openlibrary.org/b/id/8231856-L.jpg"
+  },
+  {
+    "id": "hard-30",
+    "title": "Book Hard 30",
+    "author": "Author 30",
+    "year": 1915,
+    "difficulty": "hard",
+    "cover": "https://covers.openlibrary.org/b/id/8231856-L.jpg"
+  },
+  {
+    "id": "hard-31",
+    "title": "Book Hard 31",
+    "author": "Author 31",
+    "year": 1928,
+    "difficulty": "hard",
+    "cover": "https://covers.openlibrary.org/b/id/8231856-L.jpg"
+  },
+  {
+    "id": "hard-32",
+    "title": "Book Hard 32",
+    "author": "Author 32",
+    "year": 1941,
+    "difficulty": "hard",
+    "cover": "https://covers.openlibrary.org/b/id/8231856-L.jpg"
+  },
+  {
+    "id": "hard-33",
+    "title": "Book Hard 33",
+    "author": "Author 33",
+    "year": 1954,
+    "difficulty": "hard",
+    "cover": "https://covers.openlibrary.org/b/id/8231856-L.jpg"
+  },
+  {
+    "id": "hard-34",
+    "title": "Book Hard 34",
+    "author": "Author 34",
+    "year": 1967,
+    "difficulty": "hard",
+    "cover": "https://covers.openlibrary.org/b/id/8231856-L.jpg"
+  },
+  {
+    "id": "hard-35",
+    "title": "Book Hard 35",
+    "author": "Author 35",
+    "year": 1980,
+    "difficulty": "hard",
+    "cover": "https://covers.openlibrary.org/b/id/8231856-L.jpg"
+  },
+  {
+    "id": "hard-36",
+    "title": "Book Hard 36",
+    "author": "Author 36",
+    "year": 1993,
+    "difficulty": "hard",
+    "cover": "https://covers.openlibrary.org/b/id/8231856-L.jpg"
+  },
+  {
+    "id": "hard-37",
+    "title": "Book Hard 37",
+    "author": "Author 37",
+    "year": 2006,
+    "difficulty": "hard",
+    "cover": "https://covers.openlibrary.org/b/id/8231856-L.jpg"
+  },
+  {
+    "id": "hard-38",
+    "title": "Book Hard 38",
+    "author": "Author 38",
+    "year": 2019,
+    "difficulty": "hard",
+    "cover": "https://covers.openlibrary.org/b/id/8231856-L.jpg"
+  },
+  {
+    "id": "hard-39",
+    "title": "Book Hard 39",
+    "author": "Author 39",
+    "year": 1907,
+    "difficulty": "hard",
+    "cover": "https://covers.openlibrary.org/b/id/8231856-L.jpg"
+  },
+  {
+    "id": "hard-40",
+    "title": "Book Hard 40",
+    "author": "Author 40",
+    "year": 1920,
+    "difficulty": "hard",
+    "cover": "https://covers.openlibrary.org/b/id/8231856-L.jpg"
+  },
+  {
+    "id": "hard-41",
+    "title": "Book Hard 41",
+    "author": "Author 41",
+    "year": 1933,
+    "difficulty": "hard",
+    "cover": "https://covers.openlibrary.org/b/id/8231856-L.jpg"
+  },
+  {
+    "id": "hard-42",
+    "title": "Book Hard 42",
+    "author": "Author 42",
+    "year": 1946,
+    "difficulty": "hard",
+    "cover": "https://covers.openlibrary.org/b/id/8231856-L.jpg"
+  },
+  {
+    "id": "hard-43",
+    "title": "Book Hard 43",
+    "author": "Author 43",
+    "year": 1959,
+    "difficulty": "hard",
+    "cover": "https://covers.openlibrary.org/b/id/8231856-L.jpg"
+  },
+  {
+    "id": "hard-44",
+    "title": "Book Hard 44",
+    "author": "Author 44",
+    "year": 1972,
+    "difficulty": "hard",
+    "cover": "https://covers.openlibrary.org/b/id/8231856-L.jpg"
+  },
+  {
+    "id": "hard-45",
+    "title": "Book Hard 45",
+    "author": "Author 45",
+    "year": 1985,
+    "difficulty": "hard",
+    "cover": "https://covers.openlibrary.org/b/id/8231856-L.jpg"
+  },
+  {
+    "id": "hard-46",
+    "title": "Book Hard 46",
+    "author": "Author 46",
+    "year": 1998,
+    "difficulty": "hard",
+    "cover": "https://covers.openlibrary.org/b/id/8231856-L.jpg"
+  },
+  {
+    "id": "hard-47",
+    "title": "Book Hard 47",
+    "author": "Author 47",
+    "year": 2011,
+    "difficulty": "hard",
+    "cover": "https://covers.openlibrary.org/b/id/8231856-L.jpg"
+  },
+  {
+    "id": "hard-48",
+    "title": "Book Hard 48",
+    "author": "Author 48",
+    "year": 2024,
+    "difficulty": "hard",
+    "cover": "https://covers.openlibrary.org/b/id/8231856-L.jpg"
+  },
+  {
+    "id": "hard-49",
+    "title": "Book Hard 49",
+    "author": "Author 49",
+    "year": 1912,
+    "difficulty": "hard",
+    "cover": "https://covers.openlibrary.org/b/id/8231856-L.jpg"
+  },
+  {
+    "id": "hard-50",
+    "title": "Book Hard 50",
+    "author": "Author 50",
+    "year": 1925,
+    "difficulty": "hard",
+    "cover": "https://covers.openlibrary.org/b/id/8231856-L.jpg"
+  },
+  {
+    "id": "hard-51",
+    "title": "Book Hard 51",
+    "author": "Author 51",
+    "year": 1938,
+    "difficulty": "hard",
+    "cover": "https://covers.openlibrary.org/b/id/8231856-L.jpg"
+  },
+  {
+    "id": "hard-52",
+    "title": "Book Hard 52",
+    "author": "Author 52",
+    "year": 1951,
+    "difficulty": "hard",
+    "cover": "https://covers.openlibrary.org/b/id/8231856-L.jpg"
+  },
+  {
+    "id": "hard-53",
+    "title": "Book Hard 53",
+    "author": "Author 53",
+    "year": 1964,
+    "difficulty": "hard",
+    "cover": "https://covers.openlibrary.org/b/id/8231856-L.jpg"
+  },
+  {
+    "id": "hard-54",
+    "title": "Book Hard 54",
+    "author": "Author 54",
+    "year": 1977,
+    "difficulty": "hard",
+    "cover": "https://covers.openlibrary.org/b/id/8231856-L.jpg"
+  },
+  {
+    "id": "hard-55",
+    "title": "Book Hard 55",
+    "author": "Author 55",
+    "year": 1990,
+    "difficulty": "hard",
+    "cover": "https://covers.openlibrary.org/b/id/8231856-L.jpg"
+  },
+  {
+    "id": "hard-56",
+    "title": "Book Hard 56",
+    "author": "Author 56",
+    "year": 2003,
+    "difficulty": "hard",
+    "cover": "https://covers.openlibrary.org/b/id/8231856-L.jpg"
+  },
+  {
+    "id": "hard-57",
+    "title": "Book Hard 57",
+    "author": "Author 57",
+    "year": 2016,
+    "difficulty": "hard",
+    "cover": "https://covers.openlibrary.org/b/id/8231856-L.jpg"
+  },
+  {
+    "id": "hard-58",
+    "title": "Book Hard 58",
+    "author": "Author 58",
+    "year": 1904,
+    "difficulty": "hard",
+    "cover": "https://covers.openlibrary.org/b/id/8231856-L.jpg"
+  },
+  {
+    "id": "hard-59",
+    "title": "Book Hard 59",
+    "author": "Author 59",
+    "year": 1917,
+    "difficulty": "hard",
+    "cover": "https://covers.openlibrary.org/b/id/8231856-L.jpg"
+  },
+  {
+    "id": "hard-60",
+    "title": "Book Hard 60",
+    "author": "Author 60",
+    "year": 1930,
+    "difficulty": "hard",
+    "cover": "https://covers.openlibrary.org/b/id/8231856-L.jpg"
+  },
+  {
+    "id": "hard-61",
+    "title": "Book Hard 61",
+    "author": "Author 61",
+    "year": 1943,
+    "difficulty": "hard",
+    "cover": "https://covers.openlibrary.org/b/id/8231856-L.jpg"
+  },
+  {
+    "id": "hard-62",
+    "title": "Book Hard 62",
+    "author": "Author 62",
+    "year": 1956,
+    "difficulty": "hard",
+    "cover": "https://covers.openlibrary.org/b/id/8231856-L.jpg"
+  },
+  {
+    "id": "hard-63",
+    "title": "Book Hard 63",
+    "author": "Author 63",
+    "year": 1969,
+    "difficulty": "hard",
+    "cover": "https://covers.openlibrary.org/b/id/8231856-L.jpg"
+  },
+  {
+    "id": "hard-64",
+    "title": "Book Hard 64",
+    "author": "Author 64",
+    "year": 1982,
+    "difficulty": "hard",
+    "cover": "https://covers.openlibrary.org/b/id/8231856-L.jpg"
+  },
+  {
+    "id": "hard-65",
+    "title": "Book Hard 65",
+    "author": "Author 65",
+    "year": 1995,
+    "difficulty": "hard",
+    "cover": "https://covers.openlibrary.org/b/id/8231856-L.jpg"
+  },
+  {
+    "id": "hard-66",
+    "title": "Book Hard 66",
+    "author": "Author 66",
+    "year": 2008,
+    "difficulty": "hard",
+    "cover": "https://covers.openlibrary.org/b/id/8231856-L.jpg"
+  },
+  {
+    "id": "hard-67",
+    "title": "Book Hard 67",
+    "author": "Author 67",
+    "year": 2021,
+    "difficulty": "hard",
+    "cover": "https://covers.openlibrary.org/b/id/8231856-L.jpg"
+  },
+  {
+    "id": "hard-68",
+    "title": "Book Hard 68",
+    "author": "Author 68",
+    "year": 1909,
+    "difficulty": "hard",
+    "cover": "https://covers.openlibrary.org/b/id/8231856-L.jpg"
+  },
+  {
+    "id": "hard-69",
+    "title": "Book Hard 69",
+    "author": "Author 69",
+    "year": 1922,
+    "difficulty": "hard",
+    "cover": "https://covers.openlibrary.org/b/id/8231856-L.jpg"
+  },
+  {
+    "id": "hard-70",
+    "title": "Book Hard 70",
+    "author": "Author 70",
+    "year": 1935,
+    "difficulty": "hard",
+    "cover": "https://covers.openlibrary.org/b/id/8231856-L.jpg"
+  },
+  {
+    "id": "hard-71",
+    "title": "Book Hard 71",
+    "author": "Author 71",
+    "year": 1948,
+    "difficulty": "hard",
+    "cover": "https://covers.openlibrary.org/b/id/8231856-L.jpg"
+  },
+  {
+    "id": "hard-72",
+    "title": "Book Hard 72",
+    "author": "Author 72",
+    "year": 1961,
+    "difficulty": "hard",
+    "cover": "https://covers.openlibrary.org/b/id/8231856-L.jpg"
+  },
+  {
+    "id": "hard-73",
+    "title": "Book Hard 73",
+    "author": "Author 73",
+    "year": 1974,
+    "difficulty": "hard",
+    "cover": "https://covers.openlibrary.org/b/id/8231856-L.jpg"
+  },
+  {
+    "id": "hard-74",
+    "title": "Book Hard 74",
+    "author": "Author 74",
+    "year": 1987,
+    "difficulty": "hard",
+    "cover": "https://covers.openlibrary.org/b/id/8231856-L.jpg"
+  },
+  {
+    "id": "hard-75",
+    "title": "Book Hard 75",
+    "author": "Author 75",
+    "year": 2000,
+    "difficulty": "hard",
+    "cover": "https://covers.openlibrary.org/b/id/8231856-L.jpg"
+  },
+  {
+    "id": "hard-76",
+    "title": "Book Hard 76",
+    "author": "Author 76",
+    "year": 2013,
+    "difficulty": "hard",
+    "cover": "https://covers.openlibrary.org/b/id/8231856-L.jpg"
+  },
+  {
+    "id": "hard-77",
+    "title": "Book Hard 77",
+    "author": "Author 77",
+    "year": 1901,
+    "difficulty": "hard",
+    "cover": "https://covers.openlibrary.org/b/id/8231856-L.jpg"
+  },
+  {
+    "id": "hard-78",
+    "title": "Book Hard 78",
+    "author": "Author 78",
+    "year": 1914,
+    "difficulty": "hard",
+    "cover": "https://covers.openlibrary.org/b/id/8231856-L.jpg"
+  },
+  {
+    "id": "hard-79",
+    "title": "Book Hard 79",
+    "author": "Author 79",
+    "year": 1927,
+    "difficulty": "hard",
+    "cover": "https://covers.openlibrary.org/b/id/8231856-L.jpg"
+  },
+  {
+    "id": "hard-80",
+    "title": "Book Hard 80",
+    "author": "Author 80",
+    "year": 1940,
+    "difficulty": "hard",
+    "cover": "https://covers.openlibrary.org/b/id/8231856-L.jpg"
+  },
+  {
+    "id": "hard-81",
+    "title": "Book Hard 81",
+    "author": "Author 81",
+    "year": 1953,
+    "difficulty": "hard",
+    "cover": "https://covers.openlibrary.org/b/id/8231856-L.jpg"
+  },
+  {
+    "id": "hard-82",
+    "title": "Book Hard 82",
+    "author": "Author 82",
+    "year": 1966,
+    "difficulty": "hard",
+    "cover": "https://covers.openlibrary.org/b/id/8231856-L.jpg"
+  },
+  {
+    "id": "hard-83",
+    "title": "Book Hard 83",
+    "author": "Author 83",
+    "year": 1979,
+    "difficulty": "hard",
+    "cover": "https://covers.openlibrary.org/b/id/8231856-L.jpg"
+  },
+  {
+    "id": "hard-84",
+    "title": "Book Hard 84",
+    "author": "Author 84",
+    "year": 1992,
+    "difficulty": "hard",
+    "cover": "https://covers.openlibrary.org/b/id/8231856-L.jpg"
+  },
+  {
+    "id": "hard-85",
+    "title": "Book Hard 85",
+    "author": "Author 85",
+    "year": 2005,
+    "difficulty": "hard",
+    "cover": "https://covers.openlibrary.org/b/id/8231856-L.jpg"
+  },
+  {
+    "id": "hard-86",
+    "title": "Book Hard 86",
+    "author": "Author 86",
+    "year": 2018,
+    "difficulty": "hard",
+    "cover": "https://covers.openlibrary.org/b/id/8231856-L.jpg"
+  },
+  {
+    "id": "hard-87",
+    "title": "Book Hard 87",
+    "author": "Author 87",
+    "year": 1906,
+    "difficulty": "hard",
+    "cover": "https://covers.openlibrary.org/b/id/8231856-L.jpg"
+  },
+  {
+    "id": "hard-88",
+    "title": "Book Hard 88",
+    "author": "Author 88",
+    "year": 1919,
+    "difficulty": "hard",
+    "cover": "https://covers.openlibrary.org/b/id/8231856-L.jpg"
+  },
+  {
+    "id": "hard-89",
+    "title": "Book Hard 89",
+    "author": "Author 89",
+    "year": 1932,
+    "difficulty": "hard",
+    "cover": "https://covers.openlibrary.org/b/id/8231856-L.jpg"
+  },
+  {
+    "id": "hard-90",
+    "title": "Book Hard 90",
+    "author": "Author 90",
+    "year": 1945,
+    "difficulty": "hard",
+    "cover": "https://covers.openlibrary.org/b/id/8231856-L.jpg"
+  },
+  {
+    "id": "hard-91",
+    "title": "Book Hard 91",
+    "author": "Author 91",
+    "year": 1958,
+    "difficulty": "hard",
+    "cover": "https://covers.openlibrary.org/b/id/8231856-L.jpg"
+  },
+  {
+    "id": "hard-92",
+    "title": "Book Hard 92",
+    "author": "Author 92",
+    "year": 1971,
+    "difficulty": "hard",
+    "cover": "https://covers.openlibrary.org/b/id/8231856-L.jpg"
+  },
+  {
+    "id": "hard-93",
+    "title": "Book Hard 93",
+    "author": "Author 93",
+    "year": 1984,
+    "difficulty": "hard",
+    "cover": "https://covers.openlibrary.org/b/id/8231856-L.jpg"
+  },
+  {
+    "id": "hard-94",
+    "title": "Book Hard 94",
+    "author": "Author 94",
+    "year": 1997,
+    "difficulty": "hard",
+    "cover": "https://covers.openlibrary.org/b/id/8231856-L.jpg"
+  },
+  {
+    "id": "hard-95",
+    "title": "Book Hard 95",
+    "author": "Author 95",
+    "year": 2010,
+    "difficulty": "hard",
+    "cover": "https://covers.openlibrary.org/b/id/8231856-L.jpg"
+  },
+  {
+    "id": "hard-96",
+    "title": "Book Hard 96",
+    "author": "Author 96",
+    "year": 2023,
+    "difficulty": "hard",
+    "cover": "https://covers.openlibrary.org/b/id/8231856-L.jpg"
+  },
+  {
+    "id": "hard-97",
+    "title": "Book Hard 97",
+    "author": "Author 97",
+    "year": 1911,
+    "difficulty": "hard",
+    "cover": "https://covers.openlibrary.org/b/id/8231856-L.jpg"
+  },
+  {
+    "id": "hard-98",
+    "title": "Book Hard 98",
+    "author": "Author 98",
+    "year": 1924,
+    "difficulty": "hard",
+    "cover": "https://covers.openlibrary.org/b/id/8231856-L.jpg"
+  },
+  {
+    "id": "hard-99",
+    "title": "Book Hard 99",
+    "author": "Author 99",
+    "year": 1937,
+    "difficulty": "hard",
+    "cover": "https://covers.openlibrary.org/b/id/8231856-L.jpg"
+  },
+  {
+    "id": "hard-100",
+    "title": "Book Hard 100",
+    "author": "Author 100",
+    "year": 1950,
+    "difficulty": "hard",
+    "cover": "https://covers.openlibrary.org/b/id/8231856-L.jpg"
+  }
+]
