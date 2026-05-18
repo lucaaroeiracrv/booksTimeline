@@ -36,53 +36,53 @@ const els = {
 const engine      = new GameEngine(booksData);
 let   isAnimating = false;
 const sleep       = ms => new Promise(r => setTimeout(r, ms));
-const COVER_CACHE_KEY = "booksTimeline.coverCache.v4";
+const COVER_CACHE_KEY = "booksTimeline.coverCache.v11";
 
 // ── Small helpers ─────────────────────────────────────────────────────────────
-async function resolveCoverByTitle(book) {
-  const lookupTitle = book.searchTitle || book.title;
 
-  const params = new URLSearchParams({
-    title: lookupTitle,
-    author: book.author,
-    year: String(book.year),
-    limit: "25"
-  });
+function fallbackCover(title) {
+  const safeTitle = String(title || "Livro").replace(/[&<>"']/g, s => ({
+    "&": "&amp;",
+    "<": "&lt;",
+    ">": "&gt;",
+    '"': "&quot;",
+    "'": "&#39;"
+  }[s]));
 
-  const response = await fetch(`/api/covers/resolve?${params.toString()}`);
-  if (!response.ok) return null;
+  const svg = `
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 450" role="img" aria-label="Capa temporaria de ${safeTitle}">
+      <defs>
+        <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0%" stop-color="#1d2b3f"/>
+          <stop offset="100%" stop-color="#2c415e"/>
+        </linearGradient>
+      </defs>
+      <rect width="300" height="450" rx="20" fill="url(#bg)"/>
+      <rect x="22" y="22" width="256" height="406" rx="14" fill="none" stroke="#d9bf8a" stroke-opacity="0.55"/>
+      <text x="150" y="200" text-anchor="middle" font-size="24" font-family="Nunito, sans-serif" fill="#e9e3d7" font-weight="800">Books Timeline</text>
+      <text x="150" y="250" text-anchor="middle" font-size="18" font-family="Nunito, sans-serif" fill="#d9bf8a">Capa indisponivel</text>
+    </svg>`;
 
-  const payload = await response.json();
-  return typeof payload.cover === "string" ? payload.cover : null;
+  return `data:image/svg+xml;charset=UTF-8,${encodeURIComponent(svg)}`;
 }
 
-async function hydrateCovers() {
-  const cached = JSON.parse(localStorage.getItem(COVER_CACHE_KEY) || "{}");
+function hydrateCovers() {
+  // Static mode: catalog is the single source of truth for covers.
+  const stamped = {};
 
-  const work = booksData.map(async book => {
-    if (book.coverLocked) {
-      cached[book.id] = book.cover;
-      return;
+  for (const book of booksData) {
+    if (!book.cover || typeof book.cover !== "string") {
+      book.cover = fallbackCover(book.title);
     }
 
-    if (cached[book.id]) {
-      book.cover = cached[book.id];
-      return;
-    }
+    stamped[book.id] = book.cover;
+  }
 
-    try {
-      const resolved = await resolveCoverByTitle(book);
-      if (resolved) {
-        book.cover = resolved;
-        cached[book.id] = resolved;
-      }
-    } catch {
-      // Keep current URL when network lookup fails.
-    }
-  });
-
-  await Promise.all(work);
-  localStorage.setItem(COVER_CACHE_KEY, JSON.stringify(cached));
+  try {
+    localStorage.setItem(COVER_CACHE_KEY, JSON.stringify(stamped));
+  } catch {
+    // Ignore storage failures in static mode.
+  }
 }
 
 function heartsHtml(lives) {
@@ -121,8 +121,9 @@ function renderRanking(listEl) {
 
 // ── Card builders ─────────────────────────────────────────────────────────────
 function candidateCardHtml(book) {
-  const imageMarkup = book.cover
-    ? `<img src="${book.cover}" alt="Capa de ${book.title}" loading="lazy" decoding="async" referrerpolicy="no-referrer"/>`
+  const imageSrc = book.cover || fallbackCover(book.title);
+  const imageMarkup = imageSrc
+    ? `<img src="${imageSrc}" alt="Capa de ${book.title}" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.onerror=null;this.src='${fallbackCover(book.title)}'"/>`
     : "";
 
   return `
@@ -130,7 +131,6 @@ function candidateCardHtml(book) {
     <div class="c-info">
       <strong>${book.title}</strong>
       <span class="meta">${book.author}</span>
-      <span class="year year--hidden">Data desconhecida</span>
     </div>`;
 }
 
@@ -153,8 +153,9 @@ function makeTimelineCard(book, opts = {}) {
   const yearClass = opts.yearClass || "";
   const div = document.createElement("div");
   div.className = `tl-card ${cardClass}`.trim();
-  const imageMarkup = book.cover
-    ? `<img src="${book.cover}" alt="Capa de ${book.title}" loading="lazy" decoding="async" referrerpolicy="no-referrer"/>`
+  const imageSrc = book.cover || fallbackCover(book.title);
+  const imageMarkup = imageSrc
+    ? `<img src="${imageSrc}" alt="Capa de ${book.title}" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.onerror=null;this.src='${fallbackCover(book.title)}'"/>`
     : "";
 
   div.innerHTML = `
@@ -622,14 +623,7 @@ function init() {
   });
 
   wireDrag();
-
-  els.startBtn.disabled = true;
-  els.startBtn.textContent = "Carregando capas...";
-
-  hydrateCovers().finally(() => {
-    els.startBtn.disabled = false;
-    els.startBtn.textContent = "Iniciar jogo";
-  });
+  hydrateCovers();
 }
 
 init();
