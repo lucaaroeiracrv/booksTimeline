@@ -19,6 +19,7 @@ export const booksData = [
   {
     "id": "easy-3",
     "title": "O Pequeno Príncipe",
+    "searchTitle": "The Little Prince",
     "author": "Antoine de Saint-Exupéry",
     "year": 1943,
     "difficulty": "easy",
@@ -27,6 +28,7 @@ export const booksData = [
   {
     "id": "easy-4",
     "title": "Orgulho e Preconceito",
+    "searchTitle": "Pride and Prejudice",
     "author": "Jane Austen",
     "year": 1813,
     "difficulty": "easy",
@@ -67,6 +69,7 @@ export const booksData = [
   {
     "id": "easy-9",
     "title": "A Revolução dos Bichos",
+    "searchTitle": "Animal Farm",
     "author": "George Orwell",
     "year": 1945,
     "difficulty": "easy",
@@ -83,6 +86,7 @@ export const booksData = [
   {
     "id": "easy-11",
     "title": "Cem Anos de Solidão",
+    "searchTitle": "One Hundred Years of Solitude",
     "author": "Gabriel García Márquez",
     "year": 1967,
     "difficulty": "easy",
@@ -91,10 +95,12 @@ export const booksData = [
   {
     "id": "easy-12",
     "title": "O Grande Gatsby",
+    "searchTitle": "The Great Gatsby",
     "author": "F. Scott Fitzgerald",
     "year": 1925,
     "difficulty": "easy",
-    "cover": "https://covers.openlibrary.org/b/id/8235657-L.jpg"
+    "cover": "https://covers.openlibrary.org/b/isbn/9780743273565-L.jpg",
+    "coverLocked": true
   },
   {
     "id": "easy-13",
@@ -107,6 +113,7 @@ export const booksData = [
   {
     "id": "easy-14",
     "title": "O Cortiço",
+    "searchTitle": "O Cortiço",
     "author": "Aluísio Azevedo",
     "year": 1890,
     "difficulty": "easy",
@@ -123,6 +130,7 @@ export const booksData = [
   {
     "id": "easy-16",
     "title": "O Código da Vinci",
+    "searchTitle": "The Da Vinci Code",
     "author": "Dan Brown",
     "year": 2003,
     "difficulty": "easy",
@@ -139,6 +147,7 @@ export const booksData = [
   {
     "id": "easy-18",
     "title": "O Corvo",
+    "searchTitle": "The Raven",
     "author": "Edgar Allan Poe",
     "year": 1845,
     "difficulty": "easy",
@@ -155,10 +164,43 @@ export const booksData = [
   {
     "id": "easy-20",
     "title": "Drácula",
+    "searchTitle": "Dracula",
     "author": "Bram Stoker",
     "year": 1897,
     "difficulty": "easy",
     "cover": "https://covers.openlibrary.org/b/id/8236476-L.jpg"
+  },
+  {
+    "id": "easy-21",
+    "title": "To Kill a Mockingbird",
+    "author": "Harper Lee",
+    "year": 1960,
+    "difficulty": "easy",
+    "cover": "https://covers.openlibrary.org/b/isbn/9780061120084-L.jpg"
+  },
+  {
+    "id": "easy-22",
+    "title": "The Catcher in the Rye",
+    "author": "J. D. Salinger",
+    "year": 1951,
+    "difficulty": "easy",
+    "cover": "https://covers.openlibrary.org/b/isbn/9780316769488-L.jpg"
+  },
+  {
+    "id": "easy-23",
+    "title": "Fahrenheit 451",
+    "author": "Ray Bradbury",
+    "year": 1953,
+    "difficulty": "easy",
+    "cover": "https://covers.openlibrary.org/b/isbn/9781451673319-L.jpg"
+  },
+  {
+    "id": "easy-24",
+    "title": "Don Quixote",
+    "author": "Miguel de Cervantes",
+    "year": 1605,
+    "difficulty": "easy",
+    "cover": "https://covers.openlibrary.org/b/isbn/9780060934347-L.jpg"
   },
   // Medium - Clássicos mais complexos
   {
@@ -172,6 +214,7 @@ export const booksData = [
   {
     "id": "medium-2",
     "title": "Crime e Castigo",
+    "searchTitle": "Crime and Punishment",
     "author": "Fiódor Dostoiévski",
     "year": 1866,
     "difficulty": "medium",
@@ -180,6 +223,7 @@ export const booksData = [
   {
     "id": "medium-3",
     "title": "Os Miseráveis",
+    "searchTitle": "Les Misérables",
     "author": "Victor Hugo",
     "year": 1862,
     "difficulty": "medium",
@@ -204,6 +248,7 @@ export const booksData = [
   {
     "id": "medium-6",
     "title": "O Livro da Selva",
+    "searchTitle": "The Jungle Book",
     "author": "Rudyard Kipling",
     "year": 1894,
     "difficulty": "medium",
@@ -212,6 +257,7 @@ export const booksData = [
   {
     "id": "medium-7",
     "title": "A Metamorfose",
+    "searchTitle": "The Metamorphosis",
     "author": "Franz Kafka",
     "year": 1915,
     "difficulty": "medium",
@@ -220,15 +266,49 @@ export const booksData = [
   {
     "id": "medium-8",
     "title": "O Retrato de Dorian Gray",
+    "searchTitle": "The Picture of Dorian Gray",
     "author": "Oscar Wilde",
     "year": 1890,
     "difficulty": "medium",
     "cover": "https://covers.openlibrary.org/b/id/5708865-L.jpg"
   },
+  {
+    "id": "medium-9",
+    "title": "Wuthering Heights",
+    "author": "Emily Brontë",
+    "year": 1847,
+    "difficulty": "medium",
+    "cover": "https://covers.openlibrary.org/b/isbn/9780141439556-L.jpg"
+  },
+  {
+    "id": "medium-10",
+    "title": "The Brothers Karamazov",
+    "author": "Fyodor Dostoevsky",
+    "year": 1880,
+    "difficulty": "medium",
+    "cover": "https://covers.openlibrary.org/b/isbn/9780374528379-L.jpg"
+  },
+  {
+    "id": "medium-11",
+    "title": "The Trial",
+    "author": "Franz Kafka",
+    "year": 1925,
+    "difficulty": "medium",
+    "cover": "https://covers.openlibrary.org/b/isbn/9780805210408-L.jpg"
+  },
+  {
+    "id": "medium-12",
+    "title": "The Name of the Rose",
+    "author": "Umberto Eco",
+    "year": 1980,
+    "difficulty": "medium",
+    "cover": "https://covers.openlibrary.org/b/isbn/9780156001311-L.jpg"
+  },
   // Hard - Ficção Científica e Fantasia
   {
     "id": "hard-1",
     "title": "Fundação",
+    "searchTitle": "Foundation",
     "author": "Isaac Asimov",
     "year": 1951,
     "difficulty": "hard",
@@ -245,6 +325,7 @@ export const booksData = [
   {
     "id": "hard-3",
     "title": "O Fim da Infância",
+    "searchTitle": "Childhood's End",
     "author": "Arthur C. Clarke",
     "year": 1953,
     "difficulty": "hard",
@@ -269,6 +350,7 @@ export const booksData = [
   {
     "id": "hard-6",
     "title": "A Rebelião de Atlas",
+    "searchTitle": "Atlas Shrugged",
     "author": "Ayn Rand",
     "year": 1957,
     "difficulty": "hard",
@@ -277,6 +359,7 @@ export const booksData = [
   {
     "id": "hard-7",
     "title": "Duna",
+    "searchTitle": "Dune",
     "author": "Frank Herbert",
     "year": 1965,
     "difficulty": "hard",
@@ -284,10 +367,43 @@ export const booksData = [
   },
   {
     "id": "hard-8",
-    "title": "O Homem do Futuro",
+    "title": "A Máquina do Tempo",
+    "searchTitle": "The Time Machine",
     "author": "H. G. Wells",
     "year": 1895,
     "difficulty": "hard",
     "cover": "https://covers.openlibrary.org/b/id/8241609-L.jpg"
+  },
+  {
+    "id": "hard-9",
+    "title": "Brave New World",
+    "author": "Aldous Huxley",
+    "year": 1932,
+    "difficulty": "hard",
+    "cover": "https://covers.openlibrary.org/b/isbn/9780060850524-L.jpg"
+  },
+  {
+    "id": "hard-10",
+    "title": "The Left Hand of Darkness",
+    "author": "Ursula K. Le Guin",
+    "year": 1969,
+    "difficulty": "hard",
+    "cover": "https://covers.openlibrary.org/b/isbn/9780441478125-L.jpg"
+  },
+  {
+    "id": "hard-11",
+    "title": "Snow Crash",
+    "author": "Neal Stephenson",
+    "year": 1992,
+    "difficulty": "hard",
+    "cover": "https://covers.openlibrary.org/b/isbn/9780553380958-L.jpg"
+  },
+  {
+    "id": "hard-12",
+    "title": "Hyperion",
+    "author": "Dan Simmons",
+    "year": 1989,
+    "difficulty": "hard",
+    "cover": "https://covers.openlibrary.org/b/isbn/9780553283686-L.jpg"
   }
 ];

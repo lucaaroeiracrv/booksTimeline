@@ -36,10 +36,53 @@ const els = {
 const engine      = new GameEngine(booksData);
 let   isAnimating = false;
 const sleep       = ms => new Promise(r => setTimeout(r, ms));
+const COVER_CACHE_KEY = "booksTimeline.coverCache.v4";
 
 // ── Small helpers ─────────────────────────────────────────────────────────────
-function fallbackCover(title) {
-  return `https://placehold.co/300x450/e8e0cf/2d221a?text=${encodeURIComponent(title.slice(0, 18))}`;
+async function resolveCoverByTitle(book) {
+  const lookupTitle = book.searchTitle || book.title;
+
+  const params = new URLSearchParams({
+    title: lookupTitle,
+    author: book.author,
+    year: String(book.year),
+    limit: "25"
+  });
+
+  const response = await fetch(`/api/covers/resolve?${params.toString()}`);
+  if (!response.ok) return null;
+
+  const payload = await response.json();
+  return typeof payload.cover === "string" ? payload.cover : null;
+}
+
+async function hydrateCovers() {
+  const cached = JSON.parse(localStorage.getItem(COVER_CACHE_KEY) || "{}");
+
+  const work = booksData.map(async book => {
+    if (book.coverLocked) {
+      cached[book.id] = book.cover;
+      return;
+    }
+
+    if (cached[book.id]) {
+      book.cover = cached[book.id];
+      return;
+    }
+
+    try {
+      const resolved = await resolveCoverByTitle(book);
+      if (resolved) {
+        book.cover = resolved;
+        cached[book.id] = resolved;
+      }
+    } catch {
+      // Keep current URL when network lookup fails.
+    }
+  });
+
+  await Promise.all(work);
+  localStorage.setItem(COVER_CACHE_KEY, JSON.stringify(cached));
 }
 
 function heartsHtml(lives) {
@@ -78,9 +121,12 @@ function renderRanking(listEl) {
 
 // ── Card builders ─────────────────────────────────────────────────────────────
 function candidateCardHtml(book) {
+  const imageMarkup = book.cover
+    ? `<img src="${book.cover}" alt="Capa de ${book.title}" loading="lazy" decoding="async" referrerpolicy="no-referrer"/>`
+    : "";
+
   return `
-    <img src="${book.cover}" alt="${book.title}"
-         onerror="this.src='${fallbackCover(book.title)}'"/>
+    ${imageMarkup}
     <div class="c-info">
       <strong>${book.title}</strong>
       <span class="meta">${book.author}</span>
@@ -99,7 +145,7 @@ function setCandidateCard(book) {
   }
 
   els.candidateCard.innerHTML = candidateCardHtml(book);
-  els.candidateCard.setAttribute("draggable", "true");
+  els.candidateCard.setAttribute("draggable", "false");
 }
 
 function makeTimelineCard(book, opts = {}) {
@@ -107,11 +153,15 @@ function makeTimelineCard(book, opts = {}) {
   const yearClass = opts.yearClass || "";
   const div = document.createElement("div");
   div.className = `tl-card ${cardClass}`.trim();
+  const imageMarkup = book.cover
+    ? `<img src="${book.cover}" alt="Capa de ${book.title}" loading="lazy" decoding="async" referrerpolicy="no-referrer"/>`
+    : "";
+
   div.innerHTML = `
-    <img src="${book.cover}" alt="${book.title}"
-         onerror="this.src='${fallbackCover(book.title)}'"/>
+    ${imageMarkup}
     <div class="tl-info">
       <span class="tl-title">${book.title}</span>
+      <span class="tl-author">${book.author}</span>
       <span class="tl-year ${yearClass}">${book.year}</span>
     </div>`;
   return div;
@@ -150,6 +200,16 @@ function makeSlot(index) {
 // ── Timeline renderer ─────────────────────────────────────────────────────────
 // opts: { ghostBook, ghostAt, correctAt, flashAt, revealAt, revealTone, suppressAt }
 function renderTimeline(books, opts = {}) {
+  const isInitialLayout = books.length === 1
+    && opts.flashAt == null
+    && opts.revealAt == null
+    && opts.ghostBook == null;
+
+  const scrollWrap = els.timeline.closest(".timeline-scroll");
+  if (scrollWrap) {
+    scrollWrap.classList.toggle("timeline-scroll--initial", isInitialLayout);
+  }
+  els.timeline.classList.toggle("timeline--initial", isInitialLayout);
   els.timeline.innerHTML = "";
 
   for (let i = 0; i <= books.length; i++) {
@@ -186,6 +246,19 @@ function renderTimeline(books, opts = {}) {
   // Scroll to the relevant card with better timing
   requestAnimationFrame(() => {
     setTimeout(() => {
+      const centerTimelineViewport = () => {
+        const wrap = els.timeline.closest(".timeline-scroll");
+        if (!wrap) return;
+
+        const left = Math.max(0, Math.round((els.timeline.scrollWidth - wrap.clientWidth) / 2));
+        wrap.scrollTo({ left, behavior: "smooth" });
+      };
+
+      if (isInitialLayout) {
+        centerTimelineViewport();
+        return;
+      }
+
       const target = opts.ghostAt != null
         ? els.timeline.querySelector(".tl-card--wrong")
         : opts.flashAt != null
@@ -195,11 +268,7 @@ function renderTimeline(books, opts = {}) {
       if (target) {
         target.scrollIntoView({ behavior: "smooth", inline: "center", block: "nearest" });
       } else {
-        // Scroll to the end (latest card) by default
-        const lastCard = els.timeline.querySelector(".tl-card:last-of-type");
-        if (lastCard) {
-          lastCard.scrollIntoView({ behavior: "smooth", inline: "nearest", block: "nearest" });
-        }
+        centerTimelineViewport();
       }
     }, 50);
   });
@@ -209,7 +278,6 @@ function renderTimeline(books, opts = {}) {
 async function handlePlace(slotIndex) {
   if (isAnimating) return;
   isAnimating = true;
-  els.candidateCard.setAttribute("draggable", "false");
 
   try {
     const result = engine.evaluate(slotIndex);
@@ -234,7 +302,6 @@ async function handlePlace(slotIndex) {
       renderTimeline(result.state.timeline);
       setCandidateCard(result.state.candidateBook);
       els.feedback.textContent    = "";
-      els.candidateCard.setAttribute("draggable", "true");
 
     } else {
       sounds.error();
@@ -267,7 +334,6 @@ async function handlePlace(slotIndex) {
       renderTimeline(result.state.timeline);
       setCandidateCard(result.state.candidateBook);
       els.feedback.textContent    = "";
-      els.candidateCard.setAttribute("draggable", "true");
     }
   } finally {
     isAnimating = false;
@@ -306,78 +372,234 @@ function endGame(state) {
 
 // ── Drag & Drop on candidate card ─────────────────────────────────────────────
 function wireDrag() {
-  let currentDragSlot = null;
+  const drag = {
+    pointerId: null,
+    activeSlotEl: null,
+    proxyEl: null,
+    offsetX: 0,
+    offsetY: 0,
+    targetX: 0,
+    targetY: 0,
+    currentX: 0,
+    currentY: 0,
+    rafId: 0,
+    active: false
+  };
 
-  els.candidateCard.addEventListener("dragstart", e => {
-    if (isAnimating || !engine.getState().candidateBook) {
-      e.preventDefault();
+  function clearSlotPreview() {
+    els.timeline.classList.remove("is-pointer-drag", "has-drop-target");
+    els.timeline.querySelectorAll(".tl-slot")
+      .forEach(slot => slot.classList.remove("drag-over", "drag-near", "drag-active"));
+    els.timeline.querySelectorAll(".tl-card")
+      .forEach(card => card.classList.remove("tl-card--push-right"));
+    drag.activeSlotEl = null;
+  }
+
+  function clearActiveSlot() {
+    els.timeline.classList.remove("has-drop-target");
+    els.timeline.querySelectorAll(".tl-slot")
+      .forEach(slot => slot.classList.remove("drag-over", "drag-near"));
+    els.timeline.querySelectorAll(".tl-card")
+      .forEach(card => card.classList.remove("tl-card--push-right"));
+    drag.activeSlotEl = null;
+  }
+
+  function stopProxyAnimation() {
+    if (drag.rafId) {
+      cancelAnimationFrame(drag.rafId);
+      drag.rafId = 0;
+    }
+  }
+
+  function removeProxy() {
+    stopProxyAnimation();
+    if (drag.proxyEl) {
+      drag.proxyEl.remove();
+      drag.proxyEl = null;
+    }
+  }
+
+  function findClosestSlot(clientX) {
+    const slots = Array.from(els.timeline.querySelectorAll(".tl-slot"));
+    if (!slots.length) return null;
+
+    let closest = slots[0];
+    let minDistance = Number.POSITIVE_INFINITY;
+
+    for (const slot of slots) {
+      const rect = slot.getBoundingClientRect();
+      const center = rect.left + rect.width / 2;
+      const distance = Math.abs(center - clientX);
+      if (distance < minDistance) {
+        minDistance = distance;
+        closest = slot;
+      }
+    }
+
+    return closest;
+  }
+
+  function previewGap(slotIndex) {
+    els.timeline.querySelectorAll(".tl-card").forEach((card, index) => {
+      card.classList.toggle("tl-card--push-right", index >= slotIndex);
+    });
+  }
+
+  function setActiveSlot(slotEl) {
+    if (!slotEl || drag.activeSlotEl === slotEl) return;
+
+    clearActiveSlot();
+
+    slotEl.classList.add("drag-over");
+    drag.activeSlotEl = slotEl;
+    els.timeline.classList.add("has-drop-target");
+    previewGap(Number(slotEl.dataset.index));
+  }
+
+  function autoScrollTimeline(clientX) {
+    const wrap = els.timeline.closest(".timeline-scroll");
+    if (!wrap) return;
+
+    const bounds = wrap.getBoundingClientRect();
+    const edge = 90;
+
+    if (clientX > bounds.right - edge) {
+      wrap.scrollBy({ left: 18, behavior: "auto" });
+    } else if (clientX < bounds.left + edge) {
+      wrap.scrollBy({ left: -18, behavior: "auto" });
+    }
+  }
+
+  function startProxyAnimation() {
+    stopProxyAnimation();
+
+    const tick = () => {
+      if (!drag.proxyEl) return;
+
+      drag.currentX += (drag.targetX - drag.currentX) * 0.24;
+      drag.currentY += (drag.targetY - drag.currentY) * 0.24;
+
+      drag.proxyEl.style.transform = `translate(${drag.currentX}px, ${drag.currentY}px) rotate(1.3deg) scale(1.02)`;
+      drag.rafId = requestAnimationFrame(tick);
+    };
+
+    drag.rafId = requestAnimationFrame(tick);
+  }
+
+  function animateProxyTo(x, y, { scale = 1, rotate = 0, duration = 220 } = {}) {
+    if (!drag.proxyEl) return Promise.resolve();
+
+    stopProxyAnimation();
+    drag.proxyEl.style.transition = `transform ${duration}ms cubic-bezier(0.22, 1, 0.36, 1), opacity ${duration}ms ease`;
+    drag.proxyEl.style.transform = `translate(${x}px, ${y}px) rotate(${rotate}deg) scale(${scale})`;
+
+    return new Promise(resolve => {
+      let done = false;
+      const finish = () => {
+        if (done) return;
+        done = true;
+        resolve();
+      };
+
+      drag.proxyEl.addEventListener("transitionend", finish, { once: true });
+      setTimeout(finish, duration + 40);
+    });
+  }
+
+  function finishPointerDrag() {
+    els.candidateCard.classList.remove("dragging", "dragging-source");
+    drag.active = false;
+    removeProxy();
+    clearSlotPreview();
+    if (drag.pointerId != null && els.candidateCard.hasPointerCapture(drag.pointerId)) {
+      els.candidateCard.releasePointerCapture(drag.pointerId);
+    }
+    drag.pointerId = null;
+  }
+
+  function onPointerMove(event) {
+    if (!drag.active || drag.pointerId == null || event.pointerId !== drag.pointerId) return;
+
+    event.preventDefault();
+
+    drag.targetX = event.clientX - drag.offsetX;
+    drag.targetY = event.clientY - drag.offsetY;
+
+    autoScrollTimeline(event.clientX);
+
+    const timelineBounds = els.timeline.getBoundingClientRect();
+    const nearTimelineY = event.clientY >= timelineBounds.top - 80
+      && event.clientY <= timelineBounds.bottom + 80;
+
+    if (!nearTimelineY) {
+      clearActiveSlot();
       return;
     }
 
-    e.dataTransfer.effectAllowed = "move";
-    e.dataTransfer.setDragImage(els.candidateCard, 120, 170);
-    
-    els.candidateCard.classList.add("dragging");
-    els.timeline.classList.add("is-dragging");
-    
+    const slot = findClosestSlot(event.clientX);
+    if (slot) setActiveSlot(slot);
+  }
+
+  async function onPointerUp(event) {
+    if (!drag.active || drag.pointerId == null || event.pointerId !== drag.pointerId) return;
+
+    const slotIndex = drag.activeSlotEl ? Number(drag.activeSlotEl.dataset.index) : null;
+
+    if (drag.proxyEl && drag.activeSlotEl && Number.isInteger(slotIndex)) {
+      const slotRect = drag.activeSlotEl.getBoundingClientRect();
+      const proxyRect = drag.proxyEl.getBoundingClientRect();
+      const snapX = slotRect.left + (slotRect.width - proxyRect.width) / 2;
+      const snapY = slotRect.top + 8;
+      await animateProxyTo(snapX, snapY, { scale: 0.98, rotate: 0.2, duration: 180 });
+    } else if (drag.proxyEl) {
+      const srcRect = els.candidateCard.getBoundingClientRect();
+      await animateProxyTo(srcRect.left, srcRect.top, { scale: 1, rotate: 0, duration: 150 });
+    }
+
+    finishPointerDrag();
+
+    if (!isAnimating && Number.isInteger(slotIndex) && engine.getState().candidateBook) {
+      handlePlace(slotIndex);
+    }
+  }
+
+  els.candidateCard.addEventListener("pointerdown", event => {
+    if (event.button !== 0 || isAnimating || !engine.getState().candidateBook) return;
+
+    event.preventDefault();
+    drag.active = true;
+    drag.pointerId = event.pointerId;
+    els.candidateCard.setPointerCapture(event.pointerId);
+
+    const sourceRect = els.candidateCard.getBoundingClientRect();
+    drag.offsetX = event.clientX - sourceRect.left;
+    drag.offsetY = event.clientY - sourceRect.top;
+
+    drag.targetX = sourceRect.left;
+    drag.targetY = sourceRect.top;
+    drag.currentX = drag.targetX;
+    drag.currentY = drag.targetY;
+
+    const proxy = els.candidateCard.cloneNode(true);
+    proxy.removeAttribute("id");
+    proxy.classList.add("drag-proxy");
+    proxy.style.width = `${sourceRect.width}px`;
+    proxy.style.opacity = "1";
+    proxy.style.transform = `translate(${drag.currentX}px, ${drag.currentY}px)`;
+    document.body.appendChild(proxy);
+    drag.proxyEl = proxy;
+
+    els.candidateCard.classList.add("dragging", "dragging-source");
+    els.timeline.classList.add("is-pointer-drag");
     els.timeline.querySelectorAll(".tl-slot")
-      .forEach(s => {
-        s.classList.add("drag-active");
-        s.disabled = false;
-      });
+      .forEach(slot => slot.classList.add("drag-active"));
+
+    startProxyAnimation();
   });
 
-  els.candidateCard.addEventListener("dragend", () => {
-    els.candidateCard.classList.remove("dragging");
-    els.timeline.classList.remove("is-dragging");
-    
-    els.timeline.querySelectorAll(".tl-slot")
-      .forEach(s => {
-        s.classList.remove("drag-active", "drag-over", "drag-near");
-        s.disabled = isAnimating;
-      });
-
-    currentDragSlot = null;
-  });
-
-  // Enhance slot interaction with visual hierarchy
-  const slots = els.timeline.querySelectorAll(".tl-slot");
-  slots.forEach(slot => {
-    slot.addEventListener("dragover", e => {
-      e.preventDefault();
-      e.stopPropagation();
-      
-      if (!isAnimating) {
-        // Remove from other slots
-        slots.forEach(s => s.classList.remove("drag-over"));
-        
-        // Add to current slot with smooth transition
-        slot.classList.add("drag-over");
-        currentDragSlot = slot;
-        
-        e.dataTransfer.dropEffect = "move";
-      }
-    });
-
-    slot.addEventListener("dragleave", e => {
-      e.stopPropagation();
-      if (e.target === slot) {
-        slot.classList.remove("drag-over");
-      }
-    });
-
-    slot.addEventListener("drop", e => {
-      e.preventDefault();
-      e.stopPropagation();
-      
-      slot.classList.remove("drag-over");
-      
-      if (!isAnimating && engine.getState().candidateBook) {
-        const slotIndex = parseInt(slot.dataset.index, 10);
-        handlePlace(slotIndex);
-      }
-    });
-  });
+  window.addEventListener("pointermove", onPointerMove);
+  window.addEventListener("pointerup", onPointerUp);
+  window.addEventListener("pointercancel", onPointerUp);
 }
 
 // ── Bootstrap ─────────────────────────────────────────────────────────────────
@@ -400,6 +622,14 @@ function init() {
   });
 
   wireDrag();
+
+  els.startBtn.disabled = true;
+  els.startBtn.textContent = "Carregando capas...";
+
+  hydrateCovers().finally(() => {
+    els.startBtn.disabled = false;
+    els.startBtn.textContent = "Iniciar jogo";
+  });
 }
 
 init();

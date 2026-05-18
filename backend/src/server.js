@@ -3,6 +3,7 @@ import cors from "cors";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { createBooksRouter } from "./routes/books.js";
+import { createCoversRouter } from "./routes/covers.js";
 import { createScoresRouter } from "./routes/scores.js";
 
 const app = express();
@@ -20,6 +21,7 @@ app.get("/health", (_req, res) => {
 });
 
 app.use("/api/books", createBooksRouter());
+app.use("/api/covers", createCoversRouter());
 app.use("/api/scores", createScoresRouter());
 
 app.get("/", (_req, res) => {
